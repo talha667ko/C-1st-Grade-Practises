@@ -19,8 +19,11 @@ int main()
     else if(500 <= x){
     y = x*0.75;
         }
+     else {
+        printf("Dogru bir deger girmediniz, Tekrar deneyiniz.");
+    }
     
-    printf("Urunun indirimli fiyati = %f", y);
+    printf("Urunun indirimli fiyati = %f\n", y);
     
     return 0;
 }
