@@ -6,8 +6,10 @@ int main()
 {
     int x = 0;
     float y = 0;
+    
     printf("Urunun fiyatini giriniz : ");
     scanf("%d", &x);
+    
     if (0 <= x < 100){
     y = x*0,9;
     }
@@ -17,6 +19,8 @@ int main()
     else if(500 <= x){
     y = x*0,75;
     }
+    
     printf("Urunun indirimli fiyati = %f", y);
+    
     return 0;
 }
