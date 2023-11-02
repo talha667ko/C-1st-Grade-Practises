@@ -7,23 +7,24 @@ int main()
 {
 
 
-    double yaricap =0;
-    double yukseklik =0;
-    float pi = 3.1419;
-    double hacim =0;
+    int yaricap =0;
+    int yukseklik =0;
+    double pi = 3.1416;
+    double hacim;
     double A =0;
 
     printf("Dairesel koni hacim hesaplamasi.");
     printf("\nYukseklik giriniz : ");
-    scanf("%lf", &yukseklik);
+    scanf("%d", &yukseklik);
     printf("Yaricapi giriniz : ");
-    scanf("%lf", &yaricap);
-    printf("\n\nGirdi degerleri: yukseklik %f ve yaricap %f ", &yukseklik, &yaricap);
+    scanf("%d", &yaricap);
+    printf("\n\nGirdi degerleri: yukseklik %d ve yaricap %d ", yukseklik, yaricap);
 
     A = pi*yaricap*yaricap;
-    hacim = 1/3*A*yukseklik;
 
-    printf("\n\nDairesel koninin hacmi : %f cm kuptur.", &hacim);
+    hacim = (A*yukseklik)/3.0;
+    printf("%lf", hacim);
+    printf("\n\nDairesel koninin hacmi : %.2lf cm kuptur.", hacim);
 
     return 0;
 }
