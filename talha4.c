@@ -88,7 +88,65 @@ int main(int argc, const char * argv[]) {
 //    saniye = (sure%3600)%60;
 //    printf("\nBu sure %d saat, %d dakika, %d saniye.\n", saat, dakika, saniye);
     
-//
+//  -EXERCİSE 6.19
+//    int toplamTutar;
+//    int KdvOrani;
+//    int KDV;
+//    int bedel;
+//    printf("Kdv dahhil toplam tutari giriniz (TL): ");
+//    scanf("%d", &toplamTutar);
+//    printf("Kdv oranini giriniz %: ");
+//    scanf("%d", &KdvOrani);
+//    bedel = toplamTutar/KdvOrani-1;
+//    KDV = toplamTutar-bedel;
+//    printf("\nHesaplanan Kdv miktari: %d", KDV);
+//    printf("\nKdv haric mal hizmet bedeli: %d", bedel);
+
+//  -EXERCİSE 6.24
+//      float pay1;
+//      float pay2;
+//      float payda1;
+//      float payda2;
+//      printf("Birinci ifadenin pay ve paydasini giriniz: ");
+//      scanf("%f %f", &pay1, &payda1);
+//      printf("İkinci ifadenin pay ve paydasini giriniz: ");
+//      scanf("%f %f", &pay2, &payda2);
+//      printf("\nCarpimi = %.2f", pay1/payda1*pay2/payda2);
+//      printf("\nToplami = %.2f", (pay1/payda1)+(pay2/payda2));
+
+//    -EXERCİSE 6.25 not done***
+//      int saat;
+//      int dakika;
+//      int saniye;
+//      int EklemeSN;
+//      printf("Zamani giriniz (saat, dakika, saniye) = ");
+//      scanf("%d %d %d", &saat, &dakika, &saniye);
+//      printf("Eklenecek sureyi giriniz (saniye): ");
+//      scanf("%d", &EklemeSN);
+//      saat = saat+(EklemeSN/3600);
+//      dakika = dakika+((EklemeSN%3600)/60);
+//      saniye = (saniye+((EklemeSN%3600)%60))%60;
+//      printf("Yeni zaman = %d %d %d", saat, dakika, saniye);
+
+//     -EXERCİSE 6.26
+       int para10;
+       int para100;
+       int kurus10;
+       int kurus25;
+       int lira;
+       float ToplamKurus;
+       printf("Elinizdeki 10 Para miktarini giriniz: ");
+       scanf("%d", &para10);
+       printf("Elinizdeki 100 Para miktarini giriniz: ");
+       scanf("%d", &para100);
+       printf("Elinizdeki 10 Kurus miktarini giriniz: ");
+       scanf("%d", &kurus10);
+       printf("Elinizdeki 25 Kurus miktarini giriniz: ");
+       scanf("%d", &kurus25);
+       ToplamKurus = 
+       
+       
+       printf("\nBozukluklarin toplam degeri %d lira %.2f kurus eder.\n");
     
     
     
