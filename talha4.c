@@ -114,20 +114,22 @@ int main(int argc, const char * argv[]) {
 //      printf("\nCarpimi = %.2f", pay1/payda1*pay2/payda2);
 //      printf("\nToplami = %.2f", (pay1/payda1)+(pay2/payda2));
 
-//    -EXERCİSE 6.25 not done***
+//    -EXERCİSE 6.25 
 //      int saat;
 //      int dakika;
 //      int saniye;
 //      int EklemeSN;
+//      int TumSN;
 //      printf("Zamani giriniz (saat, dakika, saniye) = ");
 //      scanf("%d %d %d", &saat, &dakika, &saniye);
 //      printf("Eklenecek sureyi giriniz (saniye): ");
 //      scanf("%d", &EklemeSN);
-//      saat = saat+(EklemeSN/3600);
-//      dakika = dakika+((EklemeSN%3600)/60);
-//      saniye = (saniye+((EklemeSN%3600)%60))%60;
+//      TumSN = saat*3600 + dakika*60 + saniye + EklemeSN;
+//      saat = TumSN/3600;
+//      dakika = (TumSN%3600)/60;
+//      saniye = (TumSN%3600)%60;
 //      printf("Yeni zaman = %d %d %d", saat, dakika, saniye);
-
+    
 //     -EXERCİSE 6.26
        int para10;
        int para100;
