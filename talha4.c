@@ -136,6 +136,7 @@ int main(int argc, const char * argv[]) {
        int kurus10;
        int kurus25;
        int lira;
+       float kurusSON;
        float ToplamKurus;
        printf("Elinizdeki 10 Para miktarini giriniz: ");
        scanf("%d", &para10);
@@ -145,10 +146,11 @@ int main(int argc, const char * argv[]) {
        scanf("%d", &kurus10);
        printf("Elinizdeki 25 Kurus miktarini giriniz: ");
        scanf("%d", &kurus25);
-       ToplamKurus = 
-       
-       
-       printf("\nBozukluklarin toplam degeri %d lira %.2f kurus eder.\n");
+
+       ToplamKurus = para10*0,25 + para100*2,5 + kurus10*10 + kurus25*25;
+       lira = ToplamKurus/100;
+       kurusSON = ToplamKurus%100;
+       printf("\nBozukluklarin toplam degeri %d lira %.2f kurus eder.\n", lira, kurusSON);
     
     
     
