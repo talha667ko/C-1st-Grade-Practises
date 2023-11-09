@@ -67,6 +67,38 @@ int main(int argc, const char * argv[]) {
 //    else
 //        printf("Uzgunuz direksiyon sinavina katilamazsiniz.\n");
     
+    //    -EXERCÝSE 7.5
+    int yas;
+    float kilo;
+    float boy;
+    float vucutKitleİ;
+
+    printf("Yasinizi giriniz: ");
+    scanf("%d", &yas);
+    printf("Kilonuzu giriniz: ");
+    scanf("%f", &kilo);
+    printf("Boyunuzu giriniz: ");
+    scanf("%f", &boy);
+
+    if(yas<=17 , yas>=13){
+
+        printf("Kilonuzu giriniz (kg) : ");
+        scanf("%d", &kilo);
+        printf("Boyunuzu giriniz (m) : ");
+        scanf("%f", &boy);
+
+        vucutKitleİ = kilo/(boy*boy);
+
+        if(vucutKitleİ>=18.50, vucutKitleİ<=24.99){
+        printf("\nVucut kitle indeksiniz: %.2f", vucutKitleİ);
+        printf("\nTebrikler askeri liseye girebilirsiniz.");
+        }
+        else
+            printf("Maalesef liseye giremezsinz.");
+    }
+else
+    printf("Maalesef liseye giremezsinz.");
+
     
     return 0;
 }
