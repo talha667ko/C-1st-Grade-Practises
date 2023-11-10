@@ -5,6 +5,7 @@
 //  Created by TALHA Korkmaz on 08/11/2023.
 //667
 
+#include <math.h>
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
@@ -183,6 +184,35 @@ int main(int argc, const char * argv[]) {
 //        printf("\nSend it to the car impound.\n");
 //        printf("With this move you'll save %d$\n", repair-(assurance-junk));
 
+
+
+    int a;
+    int b;
+    int c;
+    int ab;
+    int bc;
+    int ac;
+    
+    printf("Enter the values a, b , c of the triangle: ");
+    scanf("%d %d %d", &a, &b, &c);
+    
+    ab = fabs(a-b);
+    bc = fabs(b-c);
+    ac = fabs(a-c);
+    
+    
+    if (a<b+c && a>b-c) {
+        printf("It is a triangle. This triangle type: ");
+        if (b==a ) {
+            printf("Isosceles triangle.");
+        }
+        else if(a==b && a==c && b==c)
+            printf("Equilateral triangle.");
+        else
+            printf("Any triangle.");
+    }
+    else
+        printf("It isn't a triangle.\n");
     
     return 0;
 }
