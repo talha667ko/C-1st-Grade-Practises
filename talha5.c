@@ -166,6 +166,23 @@ int main(int argc, const char * argv[]) {
 //        else
 //            printf("You've entered a wrong letter.\n");
 
+
+
+//    -EXERCISE 7.8
+//    int assurance;
+//    int repair;
+//    int junk;
+//    
+//    printf("Enter the car's assurance, repairs and junk prices: ");
+//    scanf("%d %d %d", &assurance, &repair, &junk);
+//    
+//    if (assurance-junk > repair) {
+//        printf("\nSend it to the car service.");
+//    }
+//    else
+//        printf("\nSend it to the car impound.\n");
+//        printf("With this move you'll save %d$\n", repair-(assurance-junk));
+
     
     return 0;
 }
