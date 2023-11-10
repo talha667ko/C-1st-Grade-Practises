@@ -67,7 +67,7 @@ int main(int argc, const char * argv[]) {
 //    else
 //        printf("Uzgunuz direksiyon sinavina katilamazsiniz.\n");
     
-    //    -EXERCÝSE 7.5
+//    -EXERCÝSE 7.5
     int yas;
     float kilo;
     float boy;
@@ -98,6 +98,59 @@ int main(int argc, const char * argv[]) {
     }
 else
     printf("Maalesef liseye giremezsinz.");
+
+//    -EXERCISE 7.7
+//    char gender;
+//    float height;
+//    float weight;
+//    float ideal;
+//    float centimeter;
+//    
+//    printf("Enter your gender (m, M - f, F): ");
+//    scanf("%c", &gender);
+//    
+//    if (gender== 'm' || gender== 'M' ) {
+//        printf("Enter your height (m): ");
+//        scanf("%f", &height);
+//        printf("Enter your weight (kg): ");
+//        scanf("%f", &weight);
+//        
+//        centimeter = (height*100) - 150;
+//        ideal = 48.00 + centimeter/2.5*2.7;
+//        
+//        printf("\nYour ideal weight: %.2f\n", ideal);
+//        if (weight > ideal) {
+//            printf("You're heavier than your ideal weight.\n");
+//        }
+//        else if (weight < ideal){
+//            printf("\nYou're lighter than your ideal weight.\n");
+//        }
+//        else
+//            printf("You're at your ideal weight!\n");
+//    }
+//    else if (gender== 'f' || gender== 'F'){
+//        
+//        printf("Enter your height (m): ");
+//        scanf("%f", &height);
+//        printf("Enter your weight (kg): ");
+//        scanf("%f", &weight);
+//        
+//        centimeter = (height*100) - 150;
+//        ideal = 45.00 + centimeter/2.5*2.2;
+//        
+//        printf("\nYour ideal weight: %.2f\n", ideal);
+//        if (weight > ideal) {
+//            printf("You're heavier than your ideal weight.\n");
+//        }
+//        else if (weight < ideal){
+//            printf("\nYou're lighter than your ideal weight.\n");
+//        }
+//        else
+//            printf("You're at your ideal weight!\n");
+//        
+//    }
+//        else
+//            printf("You've entered a wrong letter.\n");
 
     
     return 0;
