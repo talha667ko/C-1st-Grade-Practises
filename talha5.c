@@ -186,33 +186,33 @@ int main(int argc, const char * argv[]) {
 
 
 
-    int a;
-    int b;
-    int c;
-    int ab;
-    int bc;
-    int ac;
-    
-    printf("Enter the values a, b , c of the triangle: ");
-    scanf("%d %d %d", &a, &b, &c);
-    
-    ab = fabs(a-b);
-    bc = fabs(b-c);
-    ac = fabs(a-c);
-    
-    
-    if (a<b+c && a>b-c) {
-        printf("It is a triangle. This triangle type: ");
-        if (b==a ) {
-            printf("Isosceles triangle.");
-        }
-        else if(a==b && a==c && b==c)
-            printf("Equilateral triangle.");
-        else
-            printf("Any triangle.");
-    }
-    else
-        printf("It isn't a triangle.\n");
+//    -EXERCISE 7.13
+//    int a;
+//    int b;
+//    int c;
+//    int ab;
+//    int bc;
+//    int ac;
+//    
+//    printf("Enter the values a, b , c of the triangle: ");
+//    scanf("%d %d %d", &a, &b, &c);
+//    
+//    ab = fabs(a-b);
+//    bc = fabs(b-c);
+//    ac = fabs(a-c);
+//    
+//    if (a<b+c && a>bc && b<a+c && b>ac && c<a+b && c>ab) {
+//        printf("It is a triangle. This triangle type: \n");
+//        if (b==a && a!=c && b!=c|| b==c && b!=a && c!=a || a==c && a!=b && c!=b) {
+//            printf("Isosceles triangle.\n");
+//        }
+//        else if(a==b && a==c && b==c)
+//            printf("Equilateral triangle.\n");
+//        else
+//            printf("Any triangle.\n");
+//    }
+//    else
+//        printf("It isn't a triangle.\n");
     
     return 0;
 }
