@@ -213,6 +213,28 @@ int main(int argc, const char * argv[]) {
 //    }
 //    else
 //        printf("It isn't a triangle.\n");
+
+
+//        -EXERCISE 7.15
+//        float time;
+//    
+//    printf("What time is it? : ");
+//    scanf("%f", &time);
+//    
+//    if (time>=0 && time<=24) {
+//        if (time<6)
+//            printf("Good sleep!\n");
+//        else if (time<11)
+//            printf("Good morning!\n");
+//        else if (time<17)
+//            printf("Have a good day!\n");
+//        else if (time<22)
+//            printf("Good afternoon!\n");
+//        else if (time<24)
+//            printf("Good night!\n");
+//    }
+//    else
+//        printf("You typed a wrong value.\n");
     
     return 0;
 }
