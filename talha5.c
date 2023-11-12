@@ -223,7 +223,7 @@ int main(int argc, const char * argv[]) {
 //    
 //    if (time>=0 && time<=24) {
 //        if (time<6)
-//            printf("Good sleep!\n");
+//            printf("Sleep good!\n");
 //        else if (time<11)
 //            printf("Good morning!\n");
 //        else if (time<17)
