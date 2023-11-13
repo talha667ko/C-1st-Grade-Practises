@@ -278,6 +278,38 @@ int main(int argc, const char * argv[]) {
 
 
 
+//    EXERCISE 7.16
+/*  float rights;
+  float mistakes;
+  float points;
+
+  printf("Enter the number of your rights: ");
+  scanf("%f", &rights);
+  printf("Enter the number of your mistakes: ");
+  scanf("%f", &mistakes);
+
+  points = rights - mistakes/4;
+  printf("\nYour total points: %.2f\n", points);
+
+  if(points<10){
+    printf("Your class is: Beginner\n");
+  }
+  else if(points>=10 && points<30){
+    printf("Your class is: Elementary\n");
+  }
+  else if(points>=30 && points<50){
+    printf("Your class is: Preintermediate\n");
+  }
+  else if(points>=50 && points<70){
+    printf("Your class is: Intermediate\n");
+  }
+  else if(points>=70){
+    printf("Your class is: Upper!\n");
+  }
+  else
+    printf("You entered a wrong value!\n");*/
+
+
     
     return 0;
 }
