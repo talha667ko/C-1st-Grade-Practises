@@ -216,7 +216,7 @@ int main(int argc, const char * argv[]) {
 
 
 //        -EXERCISE 7.15
-//        float time;
+//    float time;
 //    
 //    printf("What time is it? : ");
 //    scanf("%f", &time);
@@ -235,6 +235,47 @@ int main(int argc, const char * argv[]) {
 //    }
 //    else
 //        printf("You typed a wrong value.\n");
+
+//    EXAMPLE switch
+//        char vehicle;
+//    int day;
+//    int Km;
+//    int cost;
+//
+//    printf("Type of vehicle/locomotion\n");
+//    printf("(A or a) All road\n");
+//    printf("(L or l) Living vehicle\n");
+//    printf("(S or s) Sports car\n\n");
+//
+//    printf("Enter your type of vehicle/locomotion: ");
+//    scanf("%c", &vehicle);
+//    printf("How many days did you used it: ");
+//    scanf("%d", &day);
+//   printf("How many km have you done with the vehicle: ");
+//   scanf("%d", &Km);
+//
+//    switch(vehicle){
+//    case 'a':
+//    case 'A':
+//        cost = day*20 + Km*18;
+//        printf("\nYour amount is : %d $\n", cost);
+//        break;
+//    case 'l':
+//    case 'L':
+//        cost = day*32 + Km*22;
+//        printf("\nYour amount is : %d $\n", cost);
+//        break;
+//    case 's':
+//    case 'S':
+//        cost = day*51 + Km*36;
+//        printf("\nYour amount is : %d $\n", cost);
+//        break;
+//    default: printf("You entered a wrong letter!!!\n");
+//    }
+//    system("pause");
+
+
+
     
     return 0;
 }
