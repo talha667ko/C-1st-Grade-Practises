@@ -309,7 +309,24 @@ int main(int argc, const char * argv[]) {
   else
     printf("You entered a wrong value!\n");*/
 
+   float monthly;
+    float yearly;
+    float totalTax;
+    float monthlyTax;
+    float monthlyWoutTax;
 
+    printf("Enter your gross monthly salary: ");
+    scanf("%f", &monthly);
+    yearly = monthly*12;
+    printf("\nYour salary per year: %.2f", yearly);
+    if (yearly>0 && yearly<=10700){
+        totalTax = yearly*0.15;
+        monthlyTax = totalTax/12;
+        monthlyWoutTax = monthly-monthlyTax;
+        printf("\nAll the taxes you must pay: %.2f\n", totalTax);
+        printf("The taxes you must pay every months: %.2f\n", monthlyTax);
+        printf("Your monthly net salary: %.2f\n", monthlyWoutTax);
+    }
     
     return 0;
 }
