@@ -309,7 +309,9 @@ int main(int argc, const char * argv[]) {
   else
     printf("You entered a wrong value!\n");*/
 
-   float monthly;
+
+//  EXERCİSE 7.18   
+    /*float monthly;
     float yearly;
     float totalTax;
     float monthlyTax;
@@ -327,6 +329,34 @@ int main(int argc, const char * argv[]) {
         printf("The taxes you must pay every months: %.2f\n", monthlyTax);
         printf("Your monthly net salary: %.2f\n", monthlyWoutTax);
     }
+    else if(yearly>10700 && yearly<=26000) {
+        totalTax = (yearly-10700)*0.20 + 1605;
+        monthlyTax = totalTax/12;
+        monthlyWoutTax = monthly-monthlyTax;
+        printf("\nAll the taxes you must pay: %.2f\n", totalTax);
+        printf("The taxes you must pay every months: %.2f\n", monthlyTax);
+        printf("Your monthly net salary: %.2f\n", monthlyWoutTax);
+
+    }
+    else if(yearly>26000 && yearly<=94000){
+        totalTax = (yearly-26000)*0.27 + 4665;
+        monthlyTax = totalTax/12;
+        monthlyWoutTax = monthly-monthlyTax;
+        printf("\nAll the taxes you must pay: %.2f\n", totalTax);
+        printf("The taxes you must pay every months: %.2f\n", monthlyTax);
+        printf("Your monthly net salary: %.2f\n", monthlyWoutTax);
+
+    }
+    else if(yearly>94000){
+        totalTax = yearly*0.35;
+        monthlyTax = totalTax/12;
+        monthlyWoutTax = monthly-monthlyTax;
+        printf("\nAll the taxes you must pay: %.2f\n", totalTax);
+        printf("The taxes you must pay every months: %.2f\n", monthlyTax);
+        printf("Your monthly net salary: %.2f\n", monthlyWoutTax);
+    }
+    else
+        printf("\nYou entered a wrong amount!\n");*/
     
     return 0;
 }
