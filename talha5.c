@@ -357,6 +357,43 @@ int main(int argc, const char * argv[]) {
     }
     else
         printf("\nYou entered a wrong amount!\n");*/
+
+
+//  My sister´s old quiz 3
+    /*float number1;
+    float number2;
+    char operation;
+    float total;
+
+    printf("Calculator\n");
+    printf("------------------------------\n");
+    printf("Enter [Number1] Operation [+ - * /] [Number2]:\n");
+    scanf("%f%c%f", &number1, &operation, &number2);
+
+    switch(operation){
+    case '+':
+        total = number1 + number2;
+        printf("%.2f + %.2f = %.2f\n", number1, number2, total);
+        break;
+    case '-':
+        total = number1 - number2;
+        printf("%.2f - %.2f = %.2f\n", number1, number2, total);
+        break;
+    case '*':
+        total = number1 * number2;
+        printf("%.2f * %.2f = %.2f\n", number1, number2, total);
+        break;
+    case '/':
+        if(number2 != 0){
+        total = number1 / number2;
+        printf("%.2f / %.2f = %.2f\n", number1, number2, total);
+        }
+        else
+            printf("In a division, you cannot divide something by 0!\n");
+        break;
+    default:
+        printf("You entered something wrong!");
+    }*/
     
     return 0;
 }
