@@ -394,6 +394,40 @@ int main(int argc, const char * argv[]) {
     default:
         printf("You entered something wrong!");
     }*/
-    
+
+
+
+        float judge1A;
+    float judge1B;
+    float judge1C;
+    float judge2A;
+    float judge2B;
+    float judge2C;
+    float judge3A;
+    float judge3B;
+    float judge3C;
+    float pointA;
+    float pointB;
+    float pointC;
+
+    printf("Enter the first judge's scorecard: ");
+    scanf("%f %f %f", &judge1A, &judge1B, &judge1C);
+    printf("Enter the second judge's scorecard: ");
+    scanf("%f %f %f", &judge2A, &judge2B, &judge2C);
+    printf("Enter the third judge's scorecard: ");
+    scanf("%f %f %f", &judge3A, &judge3B, &judge3C);
+
+    pointA = (judge1A+judge2A+judge3A)/3;
+    pointB = (judge1B+judge2B+judge3B)/3;
+    pointC = (judge1C+judge2C+judge3C)/3;
+
+    if(pointA>pointB && pointA>pointC)
+        printf("\nThe first contestant is is the best (His average = %.2f)", pointA);
+    else if(pointB>pointA && pointB>pointC)
+        printf("\nThe second contestant is is the best (His average = %.2f)", pointB);
+    else if(pointC>pointA && pointC>pointB)
+        printf("\nThe third contestant is is the best (His average = %.2f)\n", pointC);
+    else
+        printf("There is an equality");
     return 0;
 }
