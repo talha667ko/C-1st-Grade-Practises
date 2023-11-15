@@ -547,6 +547,36 @@ int main(int argc, const char * argv[]) {
 
 
 
+//    EXERCISE 7.35
+    /*char videoTape;
+    int numberOF;
+    int cost;
+    
+    printf("Enter the tape type (A,a,B,b,C,c,D,d) and how much did you took: ");
+    scanf("%c %d", &videoTape, &numberOF);
+    
+    switch(videoTape){
+        case 'A':
+        case 'a':
+            cost = numberOF*1;
+            printf("\nIt costs you: %d$\n", cost);
+            break;
+        case 'B':
+        case 'b':
+            cost = numberOF*2;
+            printf("\nIt costs you: %d$\n", cost);
+            break;
+        case 'C':
+        case 'c':
+        case 'D':
+        case 'd':
+            cost = numberOF*3;
+            printf("\nIt costs you: %d$\n", cost);
+            break;
+        default:
+            printf("You're doing a mistake !?");
+    }*/
+
     
     return 0;
 }
