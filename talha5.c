@@ -507,6 +507,45 @@ int main(int argc, const char * argv[]) {
     }*/
 
 
+//    EXERCISE 7.34
+    /*int month;
+    int people;
+    int amount;
+    
+    printf("In which month (1..12) and with how much people are you going to go: ");
+    scanf("%d %d", &month, &people);
+    
+    switch (month){
+        case 12:
+        case 1:
+        case 2:
+            amount = people*150;
+            printf("\nYour total is: %d\n", amount);
+            break;
+        case 3:
+        case 4:
+        case 5:
+            amount = people*50;
+            printf("\nYour total is: %d\n", amount);
+            break;
+        case 6:
+        case 7:
+        case 8:
+            amount = people*50;
+            printf("\nYour total is: %d\n", amount);
+            break;
+        case 9:
+        case 10:
+        case 11:
+            amount = people*250;
+            printf("\nYour total is: %d\n", amount);
+            break;
+        default:
+            printf("\nError, retry please.\n");       
+    }*/
+    
+
+
 
     
     return 0;
