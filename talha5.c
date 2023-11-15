@@ -700,6 +700,46 @@ default:
     printf("\nYou entered something wrongly\n");
     }
     system("pause");*/
+
+
+        char Tour;
+    int people;
+    int busNumber;
+    int totalPlace
+    int nonUsedPlace;
+    float percetage;
+
+    printf("Choose the tour type (I,i: In town, O,o: Outside the city : ");
+    scanf("%c", &Tour);
+    printf("How much people will come: ");
+    scanf("%d", &people);
+
+    busNumber = people/46;
+    nonUsedPlace = (busNumber*46)-people
+
+  //   printf("\nFor this tour you need %d bus\n", busNumber);
+
+    switch(Tour){
+case 'I':
+case 'i':
+    if (busNumber<1){
+    printf("\nFor this tour you need 1 bus");
+    
+    nonUsedPlace = 46-people;
+    printf("\nThe empty places at the tour: %d", nonUsedPlace);
+    
+    
+    }
+        
+
+    break;
+case 'O':
+case 'o':
+    break;
+default:
+    printf("Error, you've made a mistake!");
+    }
+
     
     return 0;
 }
