@@ -473,6 +473,40 @@ int main(int argc, const char * argv[]) {
     } */
 
 
+//    EXERCISE 7.33
+    /*int day;
+    
+    printf("Enter a day value (1-7): ");
+    scanf("%d", &day);
+    
+    switch (day) {
+        case 1:
+            printf("It's MONDAY's value \n");
+            break;
+        case 2:
+            printf("It's TUESDAY's value \n");
+            break;
+        case 3:
+            printf("It's WEDNESDAY's value \n");
+            break;
+        case 4:
+            printf("It's THURSDAY's value \n");
+            break;
+        case 5:
+            printf("It's FRIDAY's value \n");
+            break;
+        case 6:
+            printf("It's SATURDAY's value \n");
+            break;
+        case 7:
+            printf("It's SUNDAY's value \n");
+            break;
+            
+        default:
+            printf("You entered a wrond number\n");
+    }*/
+
+
 
     
     return 0;
