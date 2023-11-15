@@ -424,7 +424,53 @@ int main(int argc, const char * argv[]) {
         printf("There is an equality\n");*/
 
 
+//    EXERCISE 7.30
+    /*char purchase;
+    float dollar;
     
+    printf("****PRODUCT CATALOG****");
+    printf("\n(T or t): Transistor");
+    printf("\n(R or r): Resistance");
+    printf("\n(C or c): Condenser");
+    printf("\n************************");
+    printf("\nEnter your choice: ");
+    scanf("%c", &purchase);
+    
+    switch (purchase) {
+        case 'T':
+        case 't':
+            printf("How much TRANSISTOR do you want: ");
+            scanf("%f", &dollar);
+            if (dollar>1000) {
+                printf("Amount = %.2f\n", dollar*0.9);
+            }
+            else
+                printf("Amount = %.2f\n", dollar);
+            break;
+        case 'R':
+        case 'r':
+            printf("How much RESISTANCE do you want: ");
+            scanf("%f", &dollar);
+            if (dollar>100) {
+                printf("Amount = %.2f\n", dollar*0.95);
+            }
+            else
+                printf("Amount = %.2f\n", dollar);
+            break;
+        case 'C':
+        case 'c':
+            printf("How much CONDENSER do you want: ");
+            scanf("%f", &dollar);
+            if (dollar>500) {
+                printf("Amount = %.2f\n", dollar*0.92);
+            }
+            else
+                printf("Amount = %.2f\n", dollar);
+            break;
+        default:
+            printf("Error, retry please!\n");
+            break;
+    } */
 
 
 
