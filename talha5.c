@@ -578,7 +578,7 @@ int main(int argc, const char * argv[]) {
     }*/
 
 
-
+//    EXERCİSE 7.36
     /*char job;
      float time;
      float year;
@@ -632,6 +632,74 @@ int main(int argc, const char * argv[]) {
     printf("There is a mistake.");
 
      }*/
+
+
+
+//    EXERCİSE 7.39
+    /*char vehicle;
+    int age;
+    int volume;
+
+    printf("Enter your vehicle's type (M,m:Mini Bus, P,p:Panel Van): ");
+    scanf("%c", &vehicle);
+    printf("Enter the age of your vehicle (year): ");
+    scanf("%d", &age);
+
+    switch (vehicle){
+case 'M':
+case 'm':
+    if(age>=1 && age<=6){
+        printf("Your 2005 Tax is: 523.00$\n");
+        printf("You instalment (The tax's half): 261.50$\n\n");
+    }
+    else if(age>=7 && age<=15){
+        printf("Your 2005 Tax is: 346.00$\n");
+        printf("You instalment (The tax's half): 173.00$\n\n");
+    }
+    else if(age>=16){
+        printf("Your 2005 Tax is: 172.00$\n");
+        printf("You instalment (The tax's half): 86.00$\n\n");
+    }
+    break;
+case 'P':
+case 'p':
+    printf("Enter your car's Volume: ");
+    scanf("%d", &volume);
+if(volume>0 && volume<=1900){
+    if(age>=1 && age<=6){
+        printf("Your 2005 Tax is: 697.00$\n");
+        printf("You instalment (The tax's half): 348.50$\n\n");
+    }
+    else if(age>=7 && age<=15){
+        printf("Your 2005 Tax is: 436.00$\n");
+        printf("You instalment (The tax's half): 218.00$\n\n");
+    }
+    else if(age>=16){
+        printf("Your 2005 Tax is: 260.00$\n");
+        printf("You instalment (The tax's half): 130.00$\n\n");
+    }
+    }
+else if(volume>1900){
+        if(age>=1 && age<=6){
+        printf("Your 2005 Tax is: 1052.00$\n");
+        printf("You instalment (The tax's half): 526.00$\n\n");
+    }
+    else if(age>=7 && age<=15){
+        printf("Your 2005 Tax is: 697.00$\n");
+        printf("You instalment (The tax's half): 348.50$\n\n");
+    }
+    else if(age>=16){
+        printf("Your 2005 Tax is: 436.00$\n");
+        printf("You instalment (The tax's half): 218.00$\n\n");
+    }
+    }
+    else
+        printf("You entered something wrong\n");
+    break;
+default:
+    printf("\nYou entered something wrongly\n");
+    }
+    system("pause");*/
     
     return 0;
 }
