@@ -577,6 +577,61 @@ int main(int argc, const char * argv[]) {
             printf("You're doing a mistake !?");
     }*/
 
+
+
+    /*char job;
+     float time;
+     float year;
+
+     printf("Enter your job's type (Official o,O - Private p,P): ");
+     scanf("%c", &job);
+     printf("Enter the total that you've worked (months): ");
+     scanf("%f", &time);
+     year = time/12;
+
+     switch(job){
+ case 'o':
+ case 'O':
+    if(year<1 && year>=0){
+        printf("\nSorry, because you haven't worked at least 1 year, you cannot have off days.");
+        printf("\nYou've worked = %.f months = %.2f year.\n", time, year);
+    }
+    else if(year>=1 && year<=10){
+        printf("\nYou have 20 off days every year ");
+        printf("\nYou've worked = %.f months = %.2f year.\n", time, year);
+    }
+    else if(year>10){
+        printf("\nYou have 30 off days every year ");
+        printf("\nYou've worked = %.f months = %.2f year.\n", time, year);
+    }
+    else
+        printf("There is a problem!");
+    break;
+ case 'p':
+ case 'P':
+    if(year<1 && year>=0){
+        printf("\nSorry, because you haven't worked at least 1 year, you cannot have off days.");
+        printf("\nYou've worked = %.f months = %.2f year.\n", time, year);
+    }
+    else if(year>=1 && year<6){
+        printf("\nYou have 14 off days every year ");
+        printf("\nYou've worked = %.f months = %.2f year.\n", time, year);
+    }
+    else if(year>=6 && year<15){
+        printf("\nYou have 20 off days every year ");
+        printf("\nYou've worked = %.f months = %.2f year.\n", time, year);
+    }
+    else if(year>=15){
+        printf("\nYou have 26 off days every year ");
+        printf("\nYou've worked = %.f months = %.2f year.\n", time, year);
+    }
+    else
+        printf("There is a problem!");
+    break;
+ default:
+    printf("There is a mistake.");
+
+     }*/
     
     return 0;
 }
