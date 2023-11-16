@@ -702,12 +702,13 @@ default:
     system("pause");*/
 
 
-        char Tour;
+//   EXERCISE 7.42 
+    /*char Tour;
     int people;
-    int busNumber;
-    int totalPlace
-    int nonUsedPlace;
-    float percetage;
+    float busNumber;
+    float totalPlace;
+    float nonUsedPlace;
+    float percentage;
 
     printf("Choose the tour type (I,i: In town, O,o: Outside the city : ");
     scanf("%c", &Tour);
@@ -715,30 +716,84 @@ default:
     scanf("%d", &people);
 
     busNumber = people/46;
-    nonUsedPlace = (busNumber*46)-people
-
-  //   printf("\nFor this tour you need %d bus\n", busNumber);
+    if (people%46!=0)
+        busNumber = busNumber+1;
 
     switch(Tour){
 case 'I':
 case 'i':
     if (busNumber<1){
-    printf("\nFor this tour you need 1 bus");
-    
-    nonUsedPlace = 46-people;
-    printf("\nThe empty places at the tour: %d", nonUsedPlace);
-    
-    
-    }
+        printf("\nFor this tour you need 1 bus");
         
+        nonUsedPlace = 46-people;
+        printf("\nThe empty places at the tour: %.f", nonUsedPlace);
+        percentage = people*100/46;
+        printf("\nYour filling percentage: %.2f", percentage);
+        printf("\nYour Pofit: ");
+            
+        if (percentage<60)
+            printf("Disadvantageous\n");
+        else if(percentage<90 && percentage>=60)
+            printf("Advantageous\n");
+        else
+            printf("Very advantageous\n");
+    }
+    else if (busNumber>=1)
+            printf("\nFor this tour you need %.f buses", busNumber);
+            nonUsedPlace = (busNumber*46)-people;
+            printf("\nThe empty places at the tour: %.f", nonUsedPlace);
+            percentage = people*100/(busNumber*46);
+            printf("\nYour filling percentage: %.2f", percentage);
+            printf("\nYour Pofit: ");
+                
+            if (percentage<60)
+                printf("Disadvantageous\n");
+            else if(percentage<90 && percentage>=60)
+                printf("Advantageous\n");
+            else
+                printf("Very advantageous\n");
+            
 
     break;
 case 'O':
 case 'o':
+            if (busNumber<1){
+                printf("\nFor this tour you need 1 bus");
+                
+                nonUsedPlace = 46-people;
+                printf("\nThe empty places at the tour: %.f", nonUsedPlace);
+                percentage = people*100/46;
+                printf("\nYour filling percentage: %.2f", percentage);
+                printf("\nYour Pofit: ");
+                    
+                if (percentage<70)
+                    printf("Disadvantageous\n");
+                else if(percentage<90 && percentage>=60)
+                    printf("Advantageous\n");
+                else
+                    printf("Very advantageous\n");
+            }
+            else if (busNumber>=1)
+                    printf("\nFor this tour you need %.f buses", busNumber);
+                    nonUsedPlace = (busNumber*46)-people;
+                    printf("\nThe empty places at the tour: %.f", nonUsedPlace);
+                    percentage = people*100/(busNumber*46);
+                    printf("\nYour filling percentage: %.2f", percentage);
+                    printf("\nYour Pofit: ");
+                        
+                    if (percentage<70)
+                        printf("Disadvantageous\n");
+                    else if(percentage<90 && percentage>=60)
+                        printf("Advantageous\n");
+                    else
+                        printf("Very advantageous\n");
     break;
 default:
     printf("Error, you've made a mistake!");
-    }
+    }*/
+
+
+    
 
     
     return 0;
