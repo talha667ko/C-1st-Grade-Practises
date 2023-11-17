@@ -798,7 +798,28 @@ default:
     }*/
 
 
+//    EXERCISE 7.43    
+    /*int total;
+    int num100;
+    int num10;
+    int num1;
     
+    printf("Enter a number (Hundreds): ");
+    scanf("%d", &total);
+    
+    num1 = total%10;
+    num10 = ((total%100)-num1)/10;
+    num100 = (total-(num1+num10))/100;
+    
+    if (num1>num10 && num1>num100) {
+        printf("\nThe bigger number is the first from the left\n");
+    }
+    else if (num10>num1 && num10>num100)
+        printf("\nThe bigger number is the second from the left\n");
+    else if (num100>num1 && num100>num10)
+        printf("\nThe bigger number is the last from the left\n");
+    else
+        printf("\nThere is two numbers that are bigger\n");*/
 
     
     return 0;
