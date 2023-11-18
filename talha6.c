@@ -62,7 +62,32 @@ int main(int argc, const char * argv[]) {
         yearB = yearB + 1;
     }
     printf("\nThere is %d leap year.\n", howMany);*/
+
+
+//    EXERCISE 8.9
+    /*int howMany;
+    int sTimes;
+    int theNum;
+    int positive=0;
+    int negative=0;
     
+    printf("How many number are you going to enter: ");
+    scanf("%d", &howMany);
+    printf("The numbers : ");
+    
+    sTimes = 0;
+    while(sTimes<howMany){
+        scanf("%d", &theNum);
+        if(theNum>0){
+            positive = positive + 1;
+        }
+        else{
+            negative = negative + 1;
+        }
+        sTimes++;
+    }
+    printf("\nThere is %d negative number(s) and %d positve.\n", negative, positive);*/
+
     
     return 0;
 }
