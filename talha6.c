@@ -88,6 +88,24 @@ int main(int argc, const char * argv[]) {
     }
     printf("\nThere is %d negative number(s) and %d positve.\n", negative, positive);*/
 
+
+
+//    EXERCISE 8.13
+    /*int face;
+    int faceS;
+    
+    printf("Enter a face's lenght: ");
+    scanf("%d", &face);
+    printf("\n");
+        
+    for(; face>0 ; face-- ){
+        for(faceS=face ; faceS>0 ; faceS-- )
+            printf("*");
+        printf("\n");
+    }*/
+
+
+    
     
     return 0;
 }
