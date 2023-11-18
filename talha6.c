@@ -105,6 +105,24 @@ int main(int argc, const char * argv[]) {
     }*/
 
 
+//    EXERCISE 8.15
+    /*printf("Prime numbers among 1 and 20: ");
+    printf("1,");
+    for(int i=2 ; i<21 ; i++){
+        int flag=0;
+        for(int j=2 ; j<i ;j++){
+            if(i%j==0){
+                flag=1;
+            }
+            
+        }
+        if(flag==0){
+            printf("%d,", i);
+        }
+    }
+    printf("\n");*/
+
+
     
     
     return 0;
