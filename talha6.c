@@ -123,7 +123,19 @@ int main(int argc, const char * argv[]) {
     printf("\n");*/
 
 
+//    EXERCISE 8.18
+    /*int number;
     
+    printf("Enter 5 number: ");
+    
+    for (int i=0; i<5 ; i++) {
+        scanf("%d", &number);
+        
+        for (int j=number; j>0; j--) {
+            printf("*");
+        }
+        printf("\n");
+    }*/
     
     return 0;
 }
