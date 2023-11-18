@@ -26,6 +26,28 @@ int main(int argc, const char * argv[]) {
 
 
 //    EXERCISE 8.4
+
+
+
+//    EXERCISE 8.6
+    /*int howMany=0;
+    int yearB;
+    int yearE;
+     
+    printf("Enter the beginning: ");
+    scanf("%d", &yearB);
+    printf("Enter the ending year: ");
+    scanf("%d", &yearE);
+    printf("\n");
+    
+    while (yearB<=yearE) {
+        if(yearB%4==0){
+            printf("%d, ", yearB);
+            howMany = howMany + 1;
+        }
+        yearB = yearB + 1;
+    }
+    printf("\nThere is %d leap year.\n", howMany);*/
     
     
     return 0;
