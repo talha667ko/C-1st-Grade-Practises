@@ -26,7 +26,21 @@ int main(int argc, const char * argv[]) {
 
 
 //    EXERCISE 8.4
-
+    /*int number=0;
+    int howMany;
+    float oddNumber=0;
+    float many=0;
+    
+    printf("Enter 10 numbers: ");
+    
+    for(howMany=0;howMany<10;howMany++ ){
+        scanf("%d ", &number);
+        if(number%2!=0){
+            oddNumber = oddNumber + number;
+            many = many+1;
+        }
+    }
+    printf("\n%.f nubers that you entered are odd, arithmetic average: %.1f\n", many, oddNumber/many);*/
 
 
 //    EXERCISE 8.6
