@@ -136,6 +136,30 @@ int main(int argc, const char * argv[]) {
         }
         printf("\n");
     }*/
+
+
+//    EXERCISE 8.21
+    /*printf("The numbers that you are searching: ");
+    int prime[100];
+    int a = 0;
+    
+    
+     for (int i = 99; i > 9; i--) {
+         int test = 1;
+         for (int j = 2; j < i; j++) {
+             if (i % j == 0 ) {
+                 test = 0;
+                 break;
+             }
+         }
+         if(test == 1)
+             prime[a] = i;
+         a = a + 1;
+     }
+    printf("%d", prime[1]);*/
+
+
+    
     
     return 0;
 }
