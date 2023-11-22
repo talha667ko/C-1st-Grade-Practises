@@ -166,7 +166,7 @@ int main(int argc, const char * argv[]) {
     int number;
     int i;
     
-    for (int a=0; a<2; a++) {
+    for (int a=0; a<2; ) {
         printf("\nHow many numbers are you going to enter: ");
         scanf("%d", &answer);
         if(answer<0){
@@ -185,8 +185,10 @@ int main(int argc, const char * argv[]) {
             printf("\n%d of your number are in the rules.", howMany);
             printf("\nThe addition is: %d\n", total);
         }
+        a = a + 1;
         break;
         }*/
+
 
 
     
