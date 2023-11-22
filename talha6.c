@@ -159,6 +159,36 @@ int main(int argc, const char * argv[]) {
     printf("%d", prime[1]);*/
 
 
+//    EXERCISE 8.23
+    /*int howMany=0;
+    int total=0;
+    int answer;
+    int number;
+    int i;
+    
+    for (int a=0; a<2; a++) {
+        printf("\nHow many numbers are you going to enter: ");
+        scanf("%d", &answer);
+        if(answer<0){
+            printf("The answer cannot be negative");
+            continue;
+        }
+        else{
+            printf("Enter %d numbers: ", answer);
+            for (i=1; i<=answer; i++) {
+                scanf("%d", &number);
+                if (number%8==0 || number%13==0) {
+                    total = total + number;
+                    howMany = howMany + 1;
+                }
+            }
+            printf("\n%d of your number are in the rules.", howMany);
+            printf("\nThe addition is: %d\n", total);
+        }
+        break;
+        }*/
+
+
     
     
     return 0;
