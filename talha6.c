@@ -190,6 +190,34 @@ int main(int argc, const char * argv[]) {
         }*/
 
 
+//    EXERCISE 8.24
+    /*int num1;
+    int num2;
+    int num3;
+    int num4;
+    int end1=1;
+    int end2=1;
+    int end3=1;
+    int end4=1;
+    printf("This program exponants every digits by themselves.\n");
+    printf("Enter a number of 4 digits: ");
+    scanf("%d%d%d%d", &num1, &num2, &num3, &num4);
+    
+    for (int a = num1; a>0; a--) {
+        end1 = end1 * num1;
+    }
+    for (int b = num2; b>0; b--) {
+        end2 = end2 * num2;
+    }
+    for (int c = num3; c>0; c--) {
+        end3 = end3 * num3;
+    }
+    for (int d = num4; d>0; d--) {
+        end4 = end4 * num4;
+    }
+    
+    printf("The result is :%d\n", end1+end2+end3+end4);*/
+
 
     
     
