@@ -219,6 +219,29 @@ int main(int argc, const char * argv[]) {
     printf("The result is :%d\n", end1+end2+end3+end4);*/
 
 
+//    EXERCISE 8.28
+    /*int newest=1;
+    int year;
+    int howmany=1;
+    for(int i=1; i>0; i++){
+        printf("Enter the year of your car (Enter 0 to stop): ");
+        scanf("%d", &year);
+        if (year==newest) {
+            howmany = howmany + 1;
+            continue;
+        }
+        if (year>newest)
+            newest = year;
+        if (year == 0)
+            break;
+        if (year<1000){
+            printf("Error!!! Enter a number with four digits.\n");
+            continue;
+        }
+    }
+    printf("The newest car is from %d (Total entries: %d)\n", newest, howmany);*/
+
+
     
     
     return 0;
