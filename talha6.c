@@ -242,7 +242,26 @@ int main(int argc, const char * argv[]) {
     printf("The newest car is from %d (Total entries: %d)\n", newest, howmany);*/
 
 
-    
+
+//    EXERCISE 8.32
+    double num1;
+    double numStart=100000000000000000000;
+    double numSmall2=10000000000000000000;
+
+    for(int i =0; i <10; i++){
+    printf("Number= ");
+    scanf("%d", &num1);
+
+    if(num1<numSmall2)
+        numSmall2 = num1;
+    if(numSmall2<numStart)
+        continue;
+    else
+        numStart = num1;
+
+    }
+    printf("\nThe smallest number: %.f", numStart);
+    printf("\nThe second smallest number: %.f", numSmall2);
     
     return 0;
 }
