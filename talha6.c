@@ -244,24 +244,32 @@ int main(int argc, const char * argv[]) {
 
 
 //    EXERCISE 8.32
-    double num1;
-    double numStart=100000000000000000000;
-    double numSmall2=10000000000000000000;
+    /*int num1;
+    long int numSmall1=1000000000000;
+    long int numSmall2=1000000000000;
 
     for(int i =0; i <10; i++){
-    printf("Number= ");
-    scanf("%d", &num1);
-
-    if(num1<numSmall2)
-        numSmall2 = num1;
-    if(numSmall2<numStart)
-        continue;
-    else
-        numStart = num1;
-
+        printf("Number= ");
+        scanf("%d", &num1);
+        
+        if(i<1){
+            numSmall1 = num1;
+            continue;
+        }
+        if(num1<numSmall1){
+            numSmall2 = numSmall1;
+            numSmall1 = num1;
+            continue;
+        }
+        if (num1<numSmall2) {
+            numSmall2 = num1;
+        }
     }
-    printf("\nThe smallest number: %.f", numStart);
-    printf("\nThe second smallest number: %.f", numSmall2);
+    printf("\nThe smallest number: %ld", numSmall1);
+    printf("\nThe second smallest number: %ld\n", numSmall2);*/
+
+
+    
     
     return 0;
 }
