@@ -269,7 +269,44 @@ int main(int argc, const char * argv[]) {
     printf("\nThe second smallest number: %ld\n", numSmall2);*/
 
 
-    
+        int hundreds;
+    int tens;
+    int ones;
+    int totalH = 1;
+    int totalT = 1;
+    int totalO = 1;
+    int total;
+    for (int i = 100; i < 1000; i++) {
+        hundreds = i/100;
+        ones = (i%100)%10;
+        tens = ((i%100) - ones)/10;
+        
+//        printf("%d %d %d\n", hundreds, tens, ones);
+        
+        for (; hundreds>0; hundreds--) {
+            totalH = totalH*hundreds;
+        }
+        for (; tens>0; tens--) {
+            if(tens==0){
+                totalT = 1;
+                break;
+            }
+                totalT = totalT*tens;
+            
+        }
+        for (; ones>0; ones--) {
+            if(ones==0){
+                totalO = 1;
+                break;
+            }
+            totalO = totalO*ones;
+        }
+        total = totalH + totalO + totalT;
+        printf("%d\n", totalH);
+//        if (i == total) {
+//            printf("%d\n", total);
+//        }
+    }
     
     return 0;
 }
