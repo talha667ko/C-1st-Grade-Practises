@@ -327,7 +327,30 @@ int main(int argc, const char * argv[]) {
         }
     }*/
 
-    
+
+//    EXERCISE 8.37
+    /*int hundreds;
+    int tens;
+    int ones;
+    int total;
+    int howmany = 0;
+
+    printf("Numbers that you are searching for: ");
+    for(int number = 100; number < 1000; number++){
+        hundreds = number/100;
+        tens = (number/10)%10;
+        ones = number%10;
+
+        total = (hundreds*tens*ones)*(hundreds+tens+ones);
+        if(total == number){
+            printf("%d", number);
+            howmany = howmany + 1;
+            printf(",");
+        }
+
+    }
+
+    printf("\nThere is %d special number with 3 digits.\n", howmany);*/
     
     return 0;
 }
