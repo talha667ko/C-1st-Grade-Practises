@@ -307,6 +307,27 @@ int main(int argc, const char * argv[]) {
 //            printf("%d\n", total);
 //        }
     }
+
+
+
+//    EXERCISE 8.34
+    /*int fstPart;
+    int scdPart;
+    int total;
+
+    printf("Amazing numbers with 4 digits: ");
+
+    for(int year = 1000; year <= 9999; year++){
+        fstPart = year/100;
+        scdPart = year%100;
+
+        total = (fstPart+scdPart)*(fstPart+scdPart);
+        if(total == year){
+            printf("%d ", year);
+        }
+    }*/
+
+    
     
     return 0;
 }
