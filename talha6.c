@@ -351,6 +351,23 @@ int main(int argc, const char * argv[]) {
     }
 
     printf("\nThere is %d special number with 3 digits.\n", howmany);*/
+
+
+
+//    EXERCISE 8.44
+    int number;
+
+    while(1){
+        
+        printf("Enter an Octal number (between 0-777777777): ");
+        scanf("%d", &number);
+
+        if(number >! 0 && number <! 777777777){
+            continue;
+        }
+        
+        
+    }
     
     return 0;
 }
