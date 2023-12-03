@@ -371,6 +371,43 @@ int main(int argc, const char * argv[]) {
         printf("\nThe Decimal form of your number is: %d\n\n", total);
         break;
     }*/
+
+
+//    EXERCISE 8.49
+    /*int num1;
+    int num2;
+    int num3;
+    int countUp = 0;
+    int countDown = 0;
+    int random = 0;
+    
+    while (1) {
+        printf("Enter three number: ");
+        scanf("%d %d %d", &num1, &num2, &num3);
+        
+        if (num1 < num2 && num2 < num3) {
+            countUp += 1;
+            printf("The numbers are in ascending order.\n");
+            continue;
+        }
+        else if (num3 < num2 && num2 < num1) {
+            countDown += 1;
+            printf("The numbers are in descending order.\n");
+            continue;
+        }
+        else if(num1 == num2 && num1 == num2 && num2 == num3)
+            break;
+        else {
+            random += 1;
+            printf("The numbers are un a random order.\n");
+            continue;
+        }
+            
+    
+    }
+    printf("\nProgram ends");
+    printf("\n%d of your number arrays ascending, %d descending and %d random\n", countUp, countDown, random);*/
+
     
     return 0;
 }
