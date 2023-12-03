@@ -426,6 +426,85 @@ int main(int argc, const char * argv[]) {
     }*/
 
 
+
+
+//    EXERCISE 8.63
+    /*int brand;
+    float amount;
+    int renault = 0;
+    int mazda = 0;
+    int honda = 0;
+    int ford = 0;
+    float renaultA = 0;
+    float mazdaA = 0;
+    float hondaA = 0;
+    float fordA = 0;
+    float BiggestA;
+    
+    printf("Renault (1)");
+    printf("\nMazda   (2)");
+    printf("\nHonda   (3)");
+    printf("\nFord    (4)");
+    
+    printf("\n\nTO STOP THE PROGRAM ENTER 111 0\n");
+    
+    while (1) {
+        printf("Brand, amount: ");
+        scanf("%d %f", &brand, &amount);
+        
+        if (brand == 111)
+            break;
+        
+        switch (brand) {
+            case 1:
+                renault += 1;
+                renaultA += amount;
+                break;
+            case 2:
+                mazda += 1;
+                mazdaA += amount;
+                break;
+            case 3:
+                honda += 1;
+                hondaA += amount;
+                break;
+            case 4:
+                ford += 1;
+                fordA += amount;
+                break;
+            default:
+                printf("You entered a wrong number.\n");
+        }
+        
+        
+    }
+    printf("\n\nTHE PROGRAM HAS ENDED");
+    
+    if(renault > mazda && renault > honda && renault > ford)
+        printf("\nThe brand that came the most is Renault (%d times)", renault);
+    else if(mazda > renault && mazda > honda && mazda > ford)
+        printf("\nThe brand that came the most is Mazda (%d times)", mazda);
+    else if(honda > renault && honda > mazda && honda > ford)
+        printf("\nThe brand that came the most is Honda (%d times)", honda);
+    else if(ford > renault && ford > honda && ford > mazda)
+        printf("\nThe brand that came the most is Ford (%d times)", ford);
+    else
+        printf("\nThere is an equality.");
+    
+    if (renaultA > mazdaA && renaultA > hondaA && renaultA > fordA)
+        printf("\nThe brand that has bought the most is Renault (%.2f)\n", renaultA);
+    
+    else if (mazdaA > renaultA && mazdaA > hondaA && mazdaA > fordA)
+        printf("\nThe brand that has bought the most is Mazda (%.2f)\n", mazdaA);
+    
+    else if (hondaA > renaultA && hondaA > mazdaA && hondaA > fordA)
+        printf("\nThe brand that has bought the most is Honda (%.2f)\n", hondaA);
+    
+    else if (fordA > renaultA && fordA > hondaA && fordA > mazdaA)
+        printf("\nThe brand that has bought the most is Ford (%.2f)\n", fordA);
+    
+    else
+        printf("\nThere is an equality.");*/
     
     return 0;
 }
