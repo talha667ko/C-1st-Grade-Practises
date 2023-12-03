@@ -336,19 +336,41 @@ int main(int argc, const char * argv[]) {
 
 
 //    EXERCISE 8.44
-    int number;
-
-    while(1){
+    /*int number;
+    int nbr;
+    int digit;
+    int dgt;
+    int total = 0;
+    int i = 1;
         
+    while (1) {
+        
+    label:
         printf("Enter an Octal number (between 0-777777777): ");
         scanf("%d", &number);
-
-        if(number >! 0 && number <! 777777777){
+        
+        nbr = number;
+        if(number >! 0 && number <! 777777777)
             continue;
+        
+        while (nbr > 0) {
+            dgt = nbr % 10;
+            
+            if(dgt >= 8)
+                goto label;
+            nbr = nbr / 10;
         }
         
+        while (number > 0) {
+            digit = number % 10;
+            total = total + (digit * i);
+            i = i * 8;
+            number = number / 10;
+        }
         
-    }
+        printf("\nThe Decimal form of your number is: %d\n\n", total);
+        break;
+    }*/
     
     return 0;
 }
