@@ -408,6 +408,24 @@ int main(int argc, const char * argv[]) {
     printf("\nProgram ends");
     printf("\n%d of your number arrays ascending, %d descending and %d random\n", countUp, countDown, random);*/
 
+
+//    EXERCISE 8.59
+    /*float RabbitS = 1000;
+    float WolfS = 1000;
+    float RabbitA = 0;
+    float WolfA = 0;
+    
+    printf("Day 1 there are %.f wolfs and %.f Rabbit\n", WolfS, RabbitS);
+    for (int i = 2; i < 101; i++) {
+        RabbitA = 1.01*RabbitS + 0.00001*RabbitS*WolfS;
+        WolfA = 0.995*WolfS + 0.0000001*RabbitS*WolfS;
+        
+        RabbitS = RabbitA;
+        WolfS = WolfA;
+        printf("Day %d there are %.f wolfs and %.f Rabbit\n", i, WolfS, RabbitS);
+    }*/
+
+
     
     return 0;
 }
