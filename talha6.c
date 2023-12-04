@@ -505,6 +505,37 @@ int main(int argc, const char * argv[]) {
     
     else
         printf("\nThere is an equality.");*/
+
+
+//    EXERCISE 8.73
+    /*int num;
+    int collatz = 1;
+    
+    printf("Enter your number: ");
+    
+    while (1) {
+        scanf("%d", &num);
+        if (num <= 0) {
+            printf("ERROR !!! Please enter a positive number: ");
+            continue;
+        }
+        printf("\nCollatz series: %d,", num);
+        
+        for (; num > 1; ) {
+            
+            if (num % 2 != 0)
+                num = num * 3 + 1;
+            else
+                num = num / 2;
+            
+            collatz += 1;
+            printf("%d", num);
+            if(num != 1)
+                printf(",");
+        }
+        break;
+    }
+    printf("\nThe series ise composed of %d numbers.\n", collatz);*/
     
     return 0;
 }
