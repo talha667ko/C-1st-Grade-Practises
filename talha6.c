@@ -269,25 +269,33 @@ int main(int argc, const char * argv[]) {
     printf("\nThe second smallest number: %ld\n", numSmall2);*/
 
 
-    int digit;
-    int factSum = 0;
-    int t = 1;
-    int number;
-    for (int i = 100; i < 1000; i++) {
-        number = i;
-        while (i > 0) {
-            digit = i % 10;
-            i = i / 10;
-            for (int fact = 1; fact <= digit; fact++) {
-                t = t*fact;
+//    EXERCISE 8.33
+    /*int digit = 0;
+    
+    for (int number = 100; number < 1000; number++) {
+        int reserve = number;
+        int total = 0;
+        
+        while (reserve > 0) {
+            int factorial = 1;
+            digit = reserve % 10;
+            
+            if (digit != 0) {
+                for (int i = 2; i <= digit; i++) {
+                    factorial = factorial * i;
+                }
             }
-            factSum += t;
+            else
+                total = total + 1;
+            
+            total = total + factorial;
+            reserve = reserve / 10;
         }
-        if (number == factSum) {
-            printf("%d", number);
-            break;
+        if (number == total) {
+            printf("%d is an awesome number\n", number);
         }
-            }
+    }*/
+
 
 
 
