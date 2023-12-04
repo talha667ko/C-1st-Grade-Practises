@@ -599,6 +599,38 @@ int main(int argc, const char * argv[]) {
         printf("\n");
     }*/
 
+
+//    BUTTERFLY***
+    /*int num;
+
+    printf("Enter a number to draw a butterfly: ");
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++){
+        for(int j = 0; j < i; j++){
+            printf("*");
+        }
+        for(int k = 0; k < 2*num - 2*i; k++){
+            printf(" ");
+        }
+        for(int l = 0; l < i; l++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+    for(int a = num-1; a > 0; a--){
+        for(int b = 0; b < a; b++){
+            printf("*");
+        }
+        for(int c = 0; c < 2*num - 2*a; c++){
+            printf(" ");
+        }
+        for(int d = 0; d < a; d++){
+            printf("*");
+        }
+        printf("\n");
+    }*/
     
     return 0;
 }
