@@ -544,6 +544,35 @@ int main(int argc, const char * argv[]) {
         break;
     }
     printf("\nThe series ise composed of %d numbers.\n", collatz);*/
+
+
+
+//    SLICE OF A BAKLAVA***
+    /*int num;
+
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    for(int i = 1; i <= num; i++){
+        for(int a = 0; a < num - i; a++){
+                printf(" ");
+            }
+        for(int j = 1; j <= 2*i - 1; j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+
+        for(int b = num - 1; b > 0; b--){
+            for(int w = 0; w < num - b; w++){
+                printf(" ");
+            }
+            for(int x = 2*b - 1; x > 0; x--){
+                printf("*");
+            }
+          printf("\n");
+        }*/
+
     
     return 0;
 }
