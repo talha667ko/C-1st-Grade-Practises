@@ -140,25 +140,33 @@ int main(int argc, const char * argv[]) {
 
 //    EXERCISE 8.21
     /*printf("The numbers that you are searching: ");
-    int prime[100];
-    int a = 0;
-    
-    
-     for (int i = 99; i > 9; i--) {
-         int test = 1;
-         for (int j = 2; j < i; j++) {
-             if (i % j == 0 ) {
-                 test = 0;
-                 break;
+        int prime[100];
+        int a = 0;
+        
+        
+         for (int i = 99; i > 9; i--) {
+             int test = 1;
+             for (int j = 2; j < i; j++) {
+                 if (i % j == 0 ) {
+                     test = 0;
+                     break;
+                 }
+             }
+             if(test == 1){
+                 prime[a] = i;
+                 a = a + 1;
              }
          }
-         if(test == 1)
-             prime[a] = i;
-         a = a + 1;
-     }
-    printf("%d", prime[1]);*/
+        
+    for (int b = 0; b <= a; b++) {
+        if (prime[b] - prime[b+1] == 2) {
+            printf("%d and %d\n", prime[b], prime[b+1]);
+            break;
+        }
+    }*/
 
 
+    
 //    EXERCISE 8.23
     /*int howMany=0;
     int total=0;
