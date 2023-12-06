@@ -680,6 +680,43 @@ int main(int argc, const char * argv[]) {
         printf("\n");
         x--;
     }*/
+
+
+//    HEART*** <3
+    /*int num;
+  
+    printf("Enter a number to draw a heart: ");
+    scanf("%d", &num);
+
+    int j = num;
+    for (int i = 1; i <= num; i++) {
+        for (int a = num; a > i ; a--) {
+            printf(" ");
+        }
+        for (int b = 1; b < 2*i - 1; b++) {
+            printf("*");
+        }
+        for (int c = 0; c < 2*j - 2; c++) {
+            printf(" ");
+        }
+        j = j - 1;
+        for (int d = 1; d < 2*i - 1; d++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    
+    int l = 4*(num - 1);
+    for (int k = 1; k <= 2*num - 2; k++) {
+        for (int e = 1; e < k; e++) {
+            printf(" ");
+        }
+        for (int f = 0; f < l; f++) {
+            printf("*");
+        }
+        l = l - 2;
+        printf("\n");
+    }*/
     
     return 0;
 }
