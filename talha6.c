@@ -717,6 +717,46 @@ int main(int argc, const char * argv[]) {
         l = l - 2;
         printf("\n");
     }*/
+
+
+//    MY SISTER'S QUIZ
+    /*int row;
+    int column;
+
+    printf("Enter the row number: ");
+    scanf("%d", &row);
+    printf("Enter the column number: ");
+    scanf("%d", &column);
+
+    int x = 1;
+
+    for(int j = 1; j <= column*row; j++){
+        if(row %2 == 0){
+            if(x % 2 != 0){
+                if(j %2 != 0)
+                    printf("1");
+                if(j %2 == 0)
+                    printf("0");
+            }
+            else{
+                if(j %2 != 0)
+                    printf("0");
+                if(j %2 == 0)
+                    printf("1");
+            }
+        }
+        else{
+            if(j %2 != 0)
+                printf("1");
+            if(j %2 == 0)
+                printf("0");
+        }
+        if(j % column == 0){
+            printf("\n");
+            x = x + 1;
+        }
+    }*/
+
     
     return 0;
 }
