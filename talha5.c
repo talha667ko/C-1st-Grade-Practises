@@ -5,6 +5,7 @@
 //  Created by TALHA Korkmaz on 08/11/2023.
 //667
 
+
 #include <math.h>
 #include <stdio.h>
 
