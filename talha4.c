@@ -7,6 +7,7 @@
 
 #include <stdio.h>
 
+
 int main(int argc, const char * argv[]) {
 //    -EXERCISE 6.8
 //    int sayi1;
