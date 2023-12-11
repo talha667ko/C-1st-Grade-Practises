@@ -59,3 +59,13 @@ int main(){
 
 
 //
+float TotalTime (float Vfrst, float angle);
+
+int main()
+{
+    printf("Enter the first velocity(m/s): ");
+    scanf("%f", %Vfrst);
+    printf("Enter the angle (degree): ");
+    scanf("%f", &angle);
+    
+}
