@@ -78,3 +78,30 @@ int main(){
     {
         return 2*((V*sin(alpha* M_PI/180))/9.80);
     }*/
+
+
+
+//    EXERCISE 9.4
+/*float Distance(float, int, float);
+
+int main()
+{
+    float velocity;
+    int angle;
+    float time;
+
+    printf("Enter the first velocity (m/s): ");
+    scanf("%f", &velocity);
+    printf("Enter the angle (degree): ");
+    scanf("%d", &angle);
+    printf("How many time last the object in the air (sec): ");
+    scanf("%f", &time);
+
+    printf("\nThe object willnend his path %.2f m away.\n", Distance(velocity, angle, time));
+    return 0;
+}
+
+float Distance(float V, int aplha, float sec)
+{
+    return V * cos(aplha * M_PI/180) * sec;
+}*/
