@@ -141,3 +141,24 @@ float Convert(float kg)
     ten = kg * 10;
     return (one * 8.2 + half * 6.8 + quarter * 4 + ten * 3.15)/1000;
 }*/
+
+int Integral(int, int);
+
+int main()
+{
+    int a;
+    int b;
+
+    printf("Enter the value of a and b: ");
+    scanf("%d %d", &a, &b);
+
+    Integral(a, b);
+}
+
+int Integral(int a, int b)
+{
+    float h = (b - a)/1000;
+    float result = 0;
+
+    
+}
