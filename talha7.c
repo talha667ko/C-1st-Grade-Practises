@@ -58,14 +58,23 @@ int main(){
     }*/
 
 
-//
-float TotalTime (float Vfrst, float angle);
+//    EXERCISE 9.2
+    /*float TotalTime (float, float);
 
-int main()
-{
-    printf("Enter the first velocity(m/s): ");
-    scanf("%f", %Vfrst);
-    printf("Enter the angle (degree): ");
-    scanf("%f", &angle);
+    int main()
+    {
+        float Vfrst;
+        float angle;
+
+        printf("Enter the first velocity(m/s): ");
+        scanf("%f", &Vfrst);
+        printf("Enter the angle (degree): ");
+        scanf("%f", &angle);
     
-}
+        printf("\nThe object will end his path in %f sec.\n", TotalTime(Vfrst, angle));
+    }
+
+    float TotalTime (float V, float alpha)
+    {
+        return 2*((V*sin(alpha* M_PI/180))/9.80);
+    }*/
