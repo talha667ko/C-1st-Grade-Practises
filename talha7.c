@@ -142,23 +142,51 @@ float Convert(float kg)
     return (one * 8.2 + half * 6.8 + quarter * 4 + ten * 3.15)/1000;
 }*/
 
-int Integral(int, int);
+
+//    EXERCISE 9.7
+/*float Integral(float, float);
+float Fx(float, float, float, float, float, float);
 
 int main()
 {
-    int a;
-    int b;
+    float a;
+    float b;
 
     printf("Enter the value of a and b: ");
-    scanf("%d %d", &a, &b);
+    scanf("%f %f", &a, &b);
 
     Integral(a, b);
 }
 
-int Integral(int a, int b)
+float Integral(float a, float b)
 {
-    float h = (b - a)/1000;
-    float result = 0;
+    float Fa = 0;
+    float Fb = 0;
+    float Fakh = 0;
+    float h ;
 
-    
+    h = (b - a)/1000;
+
+    Fx(a, b, Fa, Fb, Fakh, h);
+
+    return 0;
 }
+
+float Fx(float a, float b, float Fa, float Fb, float Fakh, float h)
+{
+    float fx;
+
+    Fa = 3*pow(a,5) + 5*a;
+    Fb = 3*pow(b,5) + 5*b;
+
+    for(int k = 1; k <= 999; k++){
+        float x = a + k * h;
+        fx = 3*pow(x,5) + 5*x;
+        Fakh = Fakh + fx;
+    }
+
+    int result = h * (Fa/2 + Fakh + Fb/2);
+    printf("\nThe value of the Integral between these values is: %d", result);
+
+    return 0;
+}*/
