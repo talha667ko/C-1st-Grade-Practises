@@ -105,3 +105,39 @@ float Distance(float V, int aplha, float sec)
 {
     return V * cos(aplha * M_PI/180) * sec;
 }*/
+
+
+//    EXERCISE 9.6 NOT DONE
+/*float Convert(float);
+
+int main()
+{
+    float money;
+
+    printf("How many money do you have(TL): ");
+    scanf("%f", &money);
+
+    printf("\nYour coins wheigts (kg): %f KG\n", Convert(money));
+    return 0;
+}
+
+float Convert(float kg)
+{
+    int one = kg;
+    int half;
+    int quarter;
+    int ten;
+
+    kg = kg - one;
+    if(kg >= 0.5)
+        half = kg / 0.5;
+    printf("%f\n", kg);
+    kg = kg - half * 0.5;
+    printf("%f\n", kg);
+    if (kg >= 0.25)
+        quarter = kg / 0.25;
+    kg = kg - quarter * 0.25;
+    printf("%f\n", kg);
+    ten = kg * 10;
+    return (one * 8.2 + half * 6.8 + quarter * 4 + ten * 3.15)/1000;
+}*/
