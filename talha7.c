@@ -347,7 +347,8 @@ int GiveaTime(char Moment)
     int Hours = 0;
     int Minutes = 0;
     int Seconds = 0;
-
+    srand(time(NULL));
+    
     Minutes = 0 + rand() % 59;
     Seconds = 0 + rand() % 59;
     switch (Moment)
@@ -368,3 +369,49 @@ int GiveaTime(char Moment)
     printf("The random time of your moment of the day is: %d:%d:%d\n", Hours, Minutes, Seconds);
     return 0;
 }*/
+
+
+int DoAnExo(char);
+
+int main()
+{
+    char op;
+    printf("Choose the operation(\"*\" multiplication, \"/\" division): ");
+    scanf("%c", &op);
+
+    int DoAnExo(char op);
+}
+
+int DoAnExo(char op)
+{
+    int num1 = 0;
+    int num2 = 0;
+    srand(time(NULL));
+
+    again:
+    num1 = rand() % 999 + 1;
+    num2 = rand() % 999 + 1;
+
+    switch (op)
+    {
+    case '*':
+        printf("The Question is: %d * %d = ?\n", num1, num2);
+        break;
+    case '/':
+         if (num1 >= num2){
+        if(num1 % num2 != 0)
+        goto again;
+     }
+    else{
+        if(num2 % num1 != 0)
+        goto again;}
+        if (num1 >= num2)
+         printf("The Question is: %d / %d = ?\n", num1, num2);
+        else
+        printf("The Question is: %d / %d = ?\n", num2, num1);
+        break;
+    default:
+    printf("\nInvalid operator! Please enter * or /.\n");
+        break;
+    }
+}
