@@ -221,3 +221,35 @@ int awesomeNum(int start, int end)
     return 0;
 }*/
 
+
+//    EXERCISE 9.12
+/*int PrimeNum(int, int);
+
+int main()
+{
+    int start;
+    int end;
+
+    printf("Enter the start and the end: ");
+    scanf("%d %d", &start, &end);
+
+    PrimeNum(start, end);
+}
+
+int PrimeNum(int start, int end)
+{
+    printf("The prime numbers in your limits are: ");
+
+    for (int i = start; i <= end; i++){
+        int flag = 1;
+       for (int j = 2; j < i; j++){
+        if(i % j == 0){
+        flag = 0;
+        break;
+        }
+       }
+       if(flag == 1)
+       printf("%d, ", i);
+    }
+    return 0;
+}*/
