@@ -288,3 +288,43 @@ float GrOnsConvert(float value, char type)
     printf("Your value equals to: %.7f %c\n", value, type);
     return 0;
 }*/
+
+
+//    EXERCISE 9.14
+/*int myFunc(int ,int);
+
+int main()
+{
+    int num1;
+    int num2;
+    int reserve;
+
+    printf("Enter 2 numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    if(num1 == num2){
+        printf("The numbers are equals, the smallest common diviend is themselves.");
+        return 0;
+    }
+
+    reserve = num1;
+    if(num2 > reserve){
+        reserve = num2;
+        num2 = num1;
+    }
+
+    myFunc(reserve, num2);
+    return 0;
+}
+
+int myFunc(int reserve, int num2)
+{
+    printf("\nThe smallest common dividend is: ");
+    for (int i = reserve; i > 0; i++){
+        if (i % reserve == 0 && i % num2 == 0){
+            printf("%d\n", i);
+            break;
+        }
+    }
+    return 0;
+}*/
