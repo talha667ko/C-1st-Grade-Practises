@@ -328,3 +328,43 @@ int myFunc(int reserve, int num2)
     }
     return 0;
 }*/
+
+
+//    EXERCISE 9.17
+/*int GiveaTime(char);
+
+int main()
+{
+    char Moment;
+    printf("What moment of the day is the time from(\"m\" morning, \"a\" afternoon, \"n\" night): ");
+    scanf("%c", &Moment);
+
+    GiveaTime(Moment);
+}
+
+int GiveaTime(char Moment)
+{
+    int Hours = 0;
+    int Minutes = 0;
+    int Seconds = 0;
+
+    Minutes = 0 + rand() % 59;
+    Seconds = 0 + rand() % 59;
+    switch (Moment)
+    {
+    case 'm':
+        Hours =rand() % 3 + 8;
+        break;
+    case 'a':
+        Hours =rand() % 4 + 11;
+        break;
+        case 'n':
+        Hours =rand() % 5 + 16;
+        break;
+    default:
+    printf("\nInvalid input\n");
+        break;
+    }
+    printf("The random time of your moment of the day is: %d:%d:%d\n", Hours, Minutes, Seconds);
+    return 0;
+}*/
