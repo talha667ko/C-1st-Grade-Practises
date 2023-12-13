@@ -192,7 +192,8 @@ float Fx(float a, float b, float Fa, float Fb, float Fakh, float h)
 }*/
 
 
-int awesomeNum(int, int);
+//    EXERCISE 9.10
+/*int awesomeNum(int, int);
 
 int main()
 {
@@ -206,16 +207,17 @@ int main()
 
 int awesomeNum(int start, int end)
 {
-    int addition = 0;
 
     printf("\nThe awesome number that you are searching: ");
     for(int i = start; i <= end; i++){
+        int addition = 0;
         for(int j = 1; j < i; j++){
             if(i % j == 0)
                 addition = addition + j;
         }
         if(addition == i)
-            printf("%d", i);
+            printf("%d, ", i);
     }
     return 0;
-}
+}*/
+
