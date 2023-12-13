@@ -253,3 +253,38 @@ int PrimeNum(int start, int end)
     }
     return 0;
 }*/
+
+
+//    EXERCISE 9.13
+/*float GrOnsConvert(float, char);
+
+int main()
+{
+    float value;
+    char type;
+
+    printf("Enter the value that you want to convert and his type (\"o\" Ons, \"g\" Gram): ");
+    scanf("%f %c", &value, &type);
+
+    GrOnsConvert(value, type);
+}
+
+float GrOnsConvert(float value, char type)
+{
+    switch (type)
+    {
+    case 'o':
+        value = value * 28.3495231;
+        type = 'g';
+        break;
+    case 'g':
+        value = value / 28.3495231;
+        type = 'o';
+        break;
+    default:
+        printf("\nInvalid option!\n");
+        break;
+    }
+    printf("Your value equals to: %.7f %c\n", value, type);
+    return 0;
+}*/
