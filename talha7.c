@@ -371,7 +371,8 @@ int GiveaTime(char Moment)
 }*/
 
 
-int DoAnExo(char);
+//    EXERCISE 9.20
+/*char DoAnExo(char);
 
 int main()
 {
@@ -379,10 +380,10 @@ int main()
     printf("Choose the operation(\"*\" multiplication, \"/\" division): ");
     scanf("%c", &op);
 
-    int DoAnExo(char op);
+    DoAnExo(op);
 }
 
-int DoAnExo(char op)
+char DoAnExo(char op)
 {
     int num1 = 0;
     int num2 = 0;
@@ -398,7 +399,7 @@ int DoAnExo(char op)
         printf("The Question is: %d * %d = ?\n", num1, num2);
         break;
     case '/':
-         if (num1 >= num2){
+        if (num1 >= num2){
         if(num1 % num2 != 0)
         goto again;
      }
@@ -414,4 +415,5 @@ int DoAnExo(char op)
     printf("\nInvalid operator! Please enter * or /.\n");
         break;
     }
-}
+    return 0;
+}*/
