@@ -417,3 +417,31 @@ char DoAnExo(char op)
     }
     return 0;
 }*/
+
+
+//    EXERCISE 9.23
+/*int ConvertSec(int sec);
+
+int main()
+{
+    int sec;
+
+    printf("Enter our time in seconds: ");
+    scanf("%d", &sec);
+
+    ConvertSec(sec);
+}
+
+int ConvertSec(int sec)
+{
+    int h, m, s;
+
+    h = sec / 3600;
+    sec = sec % 3600;
+    m = sec / 60;
+    sec = sec % 60;
+    s = sec;
+
+    printf("\nYour after conversion is(hours:minutes:seconds): %d:%d:%d", h, m, s);
+    return 0;
+}*/
