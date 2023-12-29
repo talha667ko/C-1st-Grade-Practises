@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include<time.h>
 
 //     FACTORİAL W FUNCTİON
 /*void factorial(int fact){
@@ -479,3 +480,23 @@ int theNearestCouple(int x1, int x2, int x3, int y1, int y2, int y3)
     }
     return 0;
 }*/
+
+int tellExcuse(int);
+
+int main()
+{
+    int month;
+    while(1){
+        printf("Enter the month number: ");
+        scanf("%d", &month);
+        tellExcuse(month);
+    }
+}
+
+int tellExcuse(month)
+{
+    int excuse;
+    srand(time(NULL));
+    if(month > 0 && month < 3 && month == 12)
+}
+
