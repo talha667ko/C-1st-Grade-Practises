@@ -445,3 +445,37 @@ int ConvertSec(int sec)
     printf("\nYour after conversion is(hours:minutes:seconds): %d:%d:%d", h, m, s);
     return 0;
 }*/
+
+
+//    EXERCISE 9.25
+/*int theNearestCouple(int, int, int, int, int, int);
+
+int main()
+{
+    int x1 = 3;
+    int y1 = 3;
+    int x2 = 7;
+    int y2 = 7;
+    int x3 = 9;
+    int y3 = 9;
+
+    theNearestCouple(x1, x2, x3, y1, y2, y3);
+}
+
+int theNearestCouple(int x1, int x2, int x3, int y1, int y2, int y3)
+{
+    int distance12 = sqrt(pow((x1 - x2),2) + pow((y1 - y2),2));
+    int distance13 = sqrt(pow((x1 - x3),2) + pow((y1 - y3),2));
+    int distance23 = sqrt(pow((x3 - x2),2) + pow((y3 - y2),2));
+
+    if(distance12 > distance13 && distance12 > distance23){
+        printf("The nearest couple : (%d,%d)-(%d,%d)", x1, y1, x2, y2);
+    }
+    else if(distance13 > distance12 && distance13 > distance23){
+        printf("The nearest couple : (%d,%d)-(%d,%d)", x1, y1, x3, y3);
+    }
+    else{
+        printf("The nearest couple : (%d,%d)-(%d,%d)", x3, y3, x2, y2);
+    }
+    return 0;
+}*/
