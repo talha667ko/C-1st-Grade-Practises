@@ -482,21 +482,69 @@ int theNearestCouple(int x1, int x2, int x3, int y1, int y2, int y3)
 }*/
 
 int tellExcuse(int);
+int printMonth(int);
 
 int main()
 {
     int month;
+    srand(time(NULL));
     while(1){
         printf("Enter the month number: ");
         scanf("%d", &month);
+        
         tellExcuse(month);
     }
 }
 
-int tellExcuse(month)
+int tellExcuse(int month)
 {
-    int excuse;
-    srand(time(NULL));
-    if(month > 0 && month < 3 && month == 12)
+    int excuse = 0;
+    if(month >= 1 && month < 3 || month != 12){
+        excuse = rand() % 8 + 3;
+        printf("%d", excuse);
+    }
+    else if (month >= 3 && month < 6){
+        Again1:
+        excuse = rand() % 11 + 1;
+        printf("%d", excuse);
+       if (excuse >= 3 && excuse < 6)
+            goto Again1;
+    }
+    else if (month >= 6 && month < 9){
+        Again2:
+        excuse = rand() % 11 + 1;
+        printf("%d", excuse);
+        if (excuse >= 6 && excuse < 9){
+            goto Again2;}
+    }
+    else if (month >= 9 && month < 12){
+        Again3:
+        excuse = rand() % 11 + 1;
+        printf("%d", excuse);
+        if (excuse >= 9 && excuse < 12)
+            goto Again3;
+    }
+    else
+        printf("You enterde a wrong number!");
+
+    printMonth(excuse);
+
+    return 0;
 }
 
+int printMonth(int excuse)
+{
+    if(excuse > 0 && excuse < 3 || excuse == 12){
+        printf("We'll go in the Winter\n");
+    }
+    else if (excuse >= 3 && excuse < 6){
+        printf("We'll go in the Spring\n");
+    }
+    else if (excuse >= 6 && excuse < 9){
+        printf("We'll go in the Summer\n");
+    }
+    else if (excuse >= 9 && excuse < 12){
+        printf("We'll go in the Autumn\n");
+    }
+    return 0;
+}
