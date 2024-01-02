@@ -566,3 +566,74 @@ int printMonth(int excuse)
     }
     return 0;
 }*/
+
+
+//    EXERCISE 9.28
+/*int randomNUM(int);
+int tellExcuse(int);
+
+int main()
+{
+    int country;
+
+    printf("America (1)\nJapan (2)\nSpain (3)\nFrance (4)\nRussia (5)\nQatar (6)\nGermany (7)\nEngland (8)\nChina (9)\nTurkiye (10)\n");
+    
+    while(1){
+    printf("\nEnter a number: ");
+    scanf("%d", &country);
+
+    randomNUM(country);
+    }
+}
+
+int randomNUM(int country)
+{
+    int num = 0;
+    time_t t = time(NULL);
+    srand((unsigned long) t);
+    while(1){
+        num = rand() % 9 + 1;
+        if (num != country){
+            break;
+        }
+    }
+    country = num;
+    tellExcuse(country);
+    return 0;
+}
+
+int tellExcuse(int country)
+{
+    switch(country) {
+        case 1:
+        printf("It's America's fault");
+        break;
+        case 2:
+        printf("It's Japan's fault");
+        break;
+        case 3:
+        printf("It's Spain's fault");
+        break;
+        case 4:
+        printf("It's the France's fault");
+        break;
+        case 5:
+        printf("It's the Russia's fault");
+        break;
+        case 6:
+        printf("It's the Qatar's fault");
+        break;
+        case 7:
+        printf("It's the Germany's fault");
+        break;
+        case 8:
+        printf("It's the UK's fault");
+        break;
+        case 9:
+        printf("It's China's fault");
+        break;
+        case 10:
+        printf("It's the Turkiye's fault");
+        break;
+    }
+}*/
