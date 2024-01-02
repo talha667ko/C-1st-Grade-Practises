@@ -481,13 +481,15 @@ int theNearestCouple(int x1, int x2, int x3, int y1, int y2, int y3)
     return 0;
 }*/
 
-int tellExcuse(int);
+
+//    EXERCISE 9.29
+/*int tellExcuse(int);
 int printMonth(int);
+int RandumNum(int);
 
 int main()
 {
     int month;
-    srand(time(NULL));
     while(1){
         printf("Enter the month number: ");
         scanf("%d", &month);
@@ -499,30 +501,39 @@ int main()
 int tellExcuse(int month)
 {
     int excuse = 0;
-    if(month >= 1 && month < 3 || month != 12){
+    if((month >= 1 && month < 3) || month == 12){
         excuse = rand() % 8 + 3;
         printf("%d", excuse);
     }
     else if (month >= 3 && month < 6){
-        Again1:
-        excuse = rand() % 11 + 1;
-        printf("%d", excuse);
-       if (excuse >= 3 && excuse < 6)
-            goto Again1;
+        while(1)
+        {
+            RandumNum(excuse);
+            if (RandumNum(excuse) >= 3 && RandumNum(excuse) < 6)
+            continue;
+            else
+            break;
+        }
     }
     else if (month >= 6 && month < 9){
-        Again2:
-        excuse = rand() % 11 + 1;
-        printf("%d", excuse);
-        if (excuse >= 6 && excuse < 9){
-            goto Again2;}
+       while(1)
+        {
+            RandumNum(excuse);
+            if (RandumNum(excuse) >= 6 && RandumNum(excuse) < 9)
+            continue;
+            else
+            break;
+        }
     }
     else if (month >= 9 && month < 12){
-        Again3:
-        excuse = rand() % 11 + 1;
-        printf("%d", excuse);
-        if (excuse >= 9 && excuse < 12)
-            goto Again3;
+        while(1)
+        {
+            RandumNum(excuse);
+            if (RandumNum(excuse) >= 9 && RandumNum(excuse) < 12)
+            continue;
+            else
+            break;
+        }
     }
     else
         printf("You enterde a wrong number!");
@@ -531,10 +542,17 @@ int tellExcuse(int month)
 
     return 0;
 }
+int RandumNum(int excuse)
+{
+    srand(time(NULL));
+    excuse = rand() % 11 + 1;
+    printf("%d", excuse);
+    return excuse;
+}
 
 int printMonth(int excuse)
 {
-    if(excuse > 0 && excuse < 3 || excuse == 12){
+    if((excuse > 0 && excuse < 3) || excuse == 12){
         printf("We'll go in the Winter\n");
     }
     else if (excuse >= 3 && excuse < 6){
@@ -547,4 +565,4 @@ int printMonth(int excuse)
         printf("We'll go in the Autumn\n");
     }
     return 0;
-}
+}*/
