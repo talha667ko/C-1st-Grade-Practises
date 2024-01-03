@@ -738,3 +738,32 @@ int backwards(num)
         num = num / 10;
     }
 }*/
+
+
+//    EXERCISE 9.48
+/*int findDigit(int,int);
+
+int main()
+{
+    int num;
+    int digit;
+
+    printf("Enter the number and the digit that you are searching: ");
+    scanf("%d %d", &num, &digit);
+
+    findDigit(num,digit);
+}
+
+int findDigit(int num, int digit)
+{
+    int a = 0;
+    while(num > 0){
+        int check ;
+        check = num % 10;
+        if(check == digit)
+            a = a + 1;
+        num = num /10;
+    }
+
+    printf("Your digit is in the number %d many times.", a);
+}*/
