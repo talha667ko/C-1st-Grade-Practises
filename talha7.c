@@ -767,3 +767,28 @@ int findDigit(int num, int digit)
 
     printf("Your digit is in the number %d many times.", a);
 }*/
+
+
+int randomPoint(int,int,int,int);
+
+int main()
+{
+    int x1, x2, y1, y2;
+
+    printf("Enter the first point's coordinates (x,y): ");
+    scanf("%d %d", &x1, &y1);
+    printf("Enter the second point's coordinates (x,y): ");
+    scanf("%d %d", &x2, &y2);
+
+    randomPoint(x1,y1,x2,y2);
+}
+
+int randomPoint(int x1,int y1,int x2,int y2)
+{
+    int yedek;
+    srand(time(NULL));
+    
+    yedek
+
+    printf("%d %d", x1, x2);
+}
