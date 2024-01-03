@@ -637,3 +637,54 @@ int tellExcuse(int country)
         break;
     }
 }*/
+
+//    EXERCISE 9.30
+/*int primeNum(int,char);
+
+int main()
+{
+    int num;
+    char choice;
+
+    printf("You want the Greater 'g' or the Smaller 's' prime number: ");
+    scanf("%c", &choice);
+
+    printf("Enter the number: ");
+    scanf("%d", &num);
+    
+    primeNum(num, choice);
+}
+
+int primeNum(int num, char choice)
+{
+    switch (choice)
+    {
+    case 'g':
+        for (int i = num+1; i > 0; i++){
+            int flag = 0;
+                for (int j = 2; j < i; j++){
+                    if (i % j == 0){
+                    flag = 1;
+                    break;}
+                }
+            if(flag == 0){
+                printf("%d\n", i);
+                break;}
+        }
+        break;
+    case 's':
+        for (int i = num-1; i > 0; i--){
+            int flag = 0;
+            for (int j = 2; j < i; j++){
+                if (i % j == 0){
+                    flag = 1;
+                    break;}
+            }
+            if(flag == 0){
+            printf("%d\n", i);
+            break;}
+        }
+        break;
+    }
+    return 0;
+}*/
