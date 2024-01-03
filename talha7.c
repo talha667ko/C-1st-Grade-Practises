@@ -688,3 +688,29 @@ int primeNum(int num, char choice)
     }
     return 0;
 }*/
+
+
+//    EXERCISE 9.35
+/*int Area(int,int,int,int);
+
+int main()
+{
+    int x1, x2, y1, y2;
+
+    printf("Enter the coordinates of the point 1 (x,y): ");
+    scanf("%d %d", &x1, &y1);
+    printf("Enter the coordinates of the point 2 (x,y): ");
+    scanf("%d %d", &x2, &y2);
+
+    Area(x1, y1, x2, y2);
+}
+
+int Area(int x1, int y1, int x2, int y2)
+{
+    int face1 = abs(x1) + abs(x2);
+    int face2 = abs(y1) + abs(y2);
+    int area = face1 * face2;
+
+    printf("The area is : %d", area);
+    return 0;
+}*/
