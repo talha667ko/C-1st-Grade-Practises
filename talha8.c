@@ -75,3 +75,27 @@ void printNum(int numbers[], int n)
         printf("%d ", numbers[i]);
     }
 }*/
+
+/*void printAgain(int [], int);
+
+int main()
+{
+    int a[5] = {13, 12, 0, 5, 8};
+
+    printf("The start adress of a is: %p\n", a);
+    for (int i = 0; i < 5; i++){
+        printf("The a[%d] adress is: %p and the number is: %d\n", i, &a[i], a[i]);
+    }
+    printf("\n");
+    printAgain(a, 5);
+    printf("\n");
+    printf("The a[3] adress is: %p and the number is: %d", &a[3], a[3]);
+}
+void printAgain(int b[], int n)
+{
+    printf("The start adress of b is: %p\n", b);
+    for (int i = 0; i < 5; i++){
+        printf("The b[%d] adress is: %p and the number is: %d\n", i, &b[i], b[i]);
+    }
+    b[3]= 46;
+}*/
