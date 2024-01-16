@@ -26,7 +26,6 @@
     }
 }*/
 
-
 /*int main()
 {
     int array[5] = {13, 12, 0, 8, 5};
@@ -44,4 +43,20 @@
     }
     printf("%d %d %d %d %d", array[0], array[1], array[2], array[3], array[4]);
     
+}*/
+
+/*int main()
+{
+    int number[5] = {13, 5, 0, 5, 8};
+    int place = -1;
+
+    for (int i = 0; i < 5; i++){
+        if(number[i] == 5)
+        place = i;
+        else
+        place = -1;
+        if(place != -1){
+            printf("Your number is at the %d index number.\n", place);
+        }
+    }
 }*/
