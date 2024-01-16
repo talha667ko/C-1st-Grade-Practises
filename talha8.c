@@ -60,3 +60,18 @@
         }
     }
 }*/
+
+/*void printNum(int [], int);
+
+int main()
+{
+    int numbers[5] = {13, 12, 0, 5, 8};
+    printNum(numbers, 5);
+}
+
+void printNum(int numbers[], int n)
+{
+    for (int i = 0; i < n; i++){
+        printf("%d ", numbers[i]);
+    }
+}*/
