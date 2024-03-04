@@ -99,3 +99,38 @@ void printAgain(int b[], int n)
     }
     b[3]= 46;
 }*/
+
+
+/*#define R 4
+#define C 6
+
+int main()
+{
+    int arr[R][C];
+    int sum[C] = {0};
+    int i,j;
+
+    for(i = 0; i < R; i++){
+        for(j = 0; j < C; j++){
+            scanf("%d", &arr[i][j]);
+        }
+    }
+
+    for(i = 0; i < R; i++){
+        printf("%d . Row: ", i);
+        for(j = 0; j < C; j++){
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+    printf("         -----------\n         ");
+
+    for(i = 0; i < R; i++){
+        for(j = 0; j < C; j++){
+            sum[j] = sum[j] + arr[i][j];
+        }
+    }
+    for(j = 0; j < C; j++){
+        printf("%d ", sum[j]);
+    }
+}*/
