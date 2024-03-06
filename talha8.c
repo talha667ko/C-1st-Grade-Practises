@@ -174,11 +174,23 @@ int main()
     }
 }
 
-void printValues(float a[], float b[])
+void putNumsInC(float a[], float b[], float c[])
 {
-    for(int i = 0; i < 6; i++){
-        printf("%.1f, ", a[i]);
-        printf("%.1f, ", b[i]);
+    int j = 0;
+    for(int i = 0; i < 12; i++){
+       if(i % 2 == 0)
+            c[i] = a[j];
+        else{
+            c[i] = b[j];
+            j++;
+        }
+    }
+}
+
+void printC(float c[])
+{
+    for(int i = 0; i < 12; i++){
+        printf("%.1f, ", c[i]);
     }
 }
 
@@ -186,6 +198,7 @@ int main()
 {
     float a[6] = { 0 };
     float b[6] = { 0 };
+    float c[6] = { 0 };
 
     printf("Enter a array's numbers: ");
     takeTheNums(a);
@@ -193,7 +206,8 @@ int main()
     takeTheNums(b);
 
     printf("c array's numbers are :\n");
-    printValues(a, b);
+    putNumsInC(a, b, c);
+    printC(c);
 
     return 0;
 }*/
