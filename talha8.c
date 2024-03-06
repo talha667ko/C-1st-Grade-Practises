@@ -198,7 +198,7 @@ int main()
 {
     float a[6] = { 0 };
     float b[6] = { 0 };
-    float c[6] = { 0 };
+    float c[12] = { 0 };
 
     printf("Enter a array's numbers: ");
     takeTheNums(a);
