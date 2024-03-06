@@ -211,3 +211,51 @@ int main()
 
     return 0;
 }*/
+
+
+//    EXERCISE 11.4
+/*void scanValues(float c[])
+{
+    for(int i = 0; i < 12; i++){
+        scanf("%f", &c[i]);
+    }
+}
+
+void dealToAB(float a[], float b[], float c[])
+{
+    int j = 0;
+    for(int i = 0; i < 12; i++){
+       if(i % 2 == 0)
+            a[j] = c[i];
+        else{
+            b[j] = c[i];
+            j++;
+        }
+    }
+}
+
+void printAB(float x[])
+{
+    for(int i = 0; i < 6; i++){
+        printf("%.1f, ", x[i]);
+    }
+    printf("\n");
+}
+
+int main()
+{
+    float a[6] = { 0 };
+    float b[6] = { 0 };
+    float c[12] = { 0 };
+
+    printf("Enter c array's numbers (12 values): ");
+    scanValues(c);
+
+    dealToAB(a, b, c);
+    printf("A array's values: ");
+    printAB(a);
+    printf("B array's values: ");
+    printAB(b);
+
+    return 0;
+}*/
