@@ -134,3 +134,33 @@ int main()
         printf("%d ", sum[j]);
     }
 }*/
+
+
+//    EXERCISE 11.1
+/*void printHistogram(int num[])
+{
+    for(int i = 0; i < 6; i++){
+        printf("%d     ", num[i]);
+
+        for(int j = 0; j < num[i]; j++){
+            printf("*");
+        }
+
+        printf("\n");
+    }
+}
+
+int main()
+{
+    int numbers[6] = { 0 };
+    int i;
+
+    printf("Enter 6 numbers: ");
+    for(i = 0; i < 6; i++){
+        scanf("%d", &numbers[i]);
+    }
+
+    printHistogram(numbers);
+
+    return 0;
+}*/
