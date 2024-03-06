@@ -164,3 +164,36 @@ int main()
 
     return 0;
 }*/
+
+
+//    EXERCISE 11.3
+/*void takeTheNums(float X[])
+{
+    for(int i = 0; i < 6; i++){
+        scanf("%f", &X[i]);
+    }
+}
+
+void printValues(float a[], float b[])
+{
+    for(int i = 0; i < 6; i++){
+        printf("%.1f, ", a[i]);
+        printf("%.1f, ", b[i]);
+    }
+}
+
+int main()
+{
+    float a[6] = { 0 };
+    float b[6] = { 0 };
+
+    printf("Enter a array's numbers: ");
+    takeTheNums(a);
+    printf("Enter b array's numbers: ");
+    takeTheNums(b);
+
+    printf("c array's numbers are :\n");
+    printValues(a, b);
+
+    return 0;
+}*/
