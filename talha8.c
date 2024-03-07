@@ -305,3 +305,59 @@ int main()
     Average(values);
     return 0;
 }*/
+
+
+//    EXERCISE 11.7
+/*void defineAB(float c[], float a[], float b[], float avrg)
+{
+    int j = 0;
+    int k = 0;
+    for (int i = 0; i < 10; i++){
+        if(c[i] >= avrg){
+            a[j] = c[i];
+            j++; 
+        }
+        else{
+            b[k] = c[i];
+            k++;
+        }
+    }
+
+    printf("\nValues of a (greater or equal):\n");
+    for (int i = 0; i < j; i++){
+        printf("%.1f ", a[i]);
+    }
+    printf("\nValues of b (smaller):\n");
+    for (int i = 0; i < k; i++){
+        printf("%.1f ", b[i]);
+    }
+    
+}
+void Average(float c[], float a[], float b[])
+{
+    float total = 0;
+    float average = 0;
+
+    for (int i = 0; i < 10; i++){
+        total = total + c[i];
+    }
+    average = total / 10;
+    printf("\nThe average is %.2f", average);
+    defineAB(c, a, b, average);
+}
+void Scan(float c[])
+{
+    for (int i = 0; i < 10; i++){
+        scanf("%f", &c[i]);
+    }
+}
+int main()
+{
+    float c[10] = { 0 };
+    float a[10] = { 0 };
+    float b[10] = { 0 };
+
+    printf("Enter 10 values: ");
+    Scan(c);
+    Average(c, a, b);
+}*/
