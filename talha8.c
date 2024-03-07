@@ -361,3 +361,49 @@ int main()
     Scan(c);
     Average(c, a, b);
 }*/
+
+
+void TheDay(float price[], float avrg)
+{
+    int day = 0;
+    float diff = 0;
+    diff = fabs(price[0] - avrg);
+    printf("%.2f\n", diff);
+    printf("%.2f\n", avrg);
+    for (int i = 1; i < 30; i++){
+        float substitude = fabs(price[i] - avrg);
+        printf("%.2f ", substitude);
+        if(substitude > diff){
+            day = i + 1;
+        }
+    }
+    printf("\n%d", day);
+    
+}
+void Average(float price[])
+{
+    float avrg = 0;
+    for (int i = 0; i < 30; i++){
+        avrg = avrg + price[i];
+    }
+    avrg = avrg / 30;
+
+    TheDay(price, avrg);
+}
+void Scan(float price[])
+{
+    for (int i = 0; i < 30; i++){
+        scanf("%f", &price[i]);
+    }
+}
+int main()
+{
+    
+    float gold[10] = { 0 };
+    printf("Enter gold's prices for the past 30 days: ");
+    Scan(gold);
+    Average(gold);
+
+}
+
+//50 55 69 65 34 56 33 76 86 55 51 50 56 87 34 23 99.9 34 65 67 76 54 45 45 40 67 54 78 56 30
