@@ -259,3 +259,49 @@ int main()
 
     return 0;
 }*/
+
+
+//    EXERCISE 11.6
+/*void Under(float [], int);
+void Scan(float a[])
+{
+    for (int i = 0; i < 10; i++){
+        scanf("%f", &a[i]);
+    }
+    
+}
+
+void Average(float a[])
+{
+    float total = 0;
+    float average = 0;
+
+    for (int i = 0; i < 10; i++){
+        total = total + a[i];
+    }
+    average = total / 10;
+    printf("\nThe average is %.2f", average);
+    
+    Under(a, average);
+
+}
+
+void Under(float b[], int avrg)
+{
+    printf("\nValues under the average:\n");
+    for (int i = 0; i < 10; i++){
+        if(b[i] < avrg)
+        printf("%.f ", b[i]);
+    }
+}
+
+int main()
+{
+    float values[10] = { 0 };
+
+    printf("Enter the array's values: ");
+    Scan(values);
+
+    Average(values);
+    return 0;
+}*/
