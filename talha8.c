@@ -363,22 +363,23 @@ int main()
 }*/
 
 
-void TheDay(float price[], float avrg)
+//    EXERCISE 11.9
+/*void TheDay(float price[], float avrg)
 {
     int day = 0;
     float diff = 0;
     diff = fabs(price[0] - avrg);
-    printf("%.2f\n", diff);
-    printf("%.2f\n", avrg);
+    printf("The average is %.2f", avrg);
     for (int i = 1; i < 30; i++){
         float substitude = fabs(price[i] - avrg);
-        printf("%.2f ", substitude);
+        
         if(substitude > diff){
             day = i + 1;
+            diff = substitude;
         }
     }
-    printf("\n%d", day);
-    
+    printf("\n%d is the day with the highest difference and it's ", day);
+    printf("%.2f\n $", diff);
 }
 void Average(float price[])
 {
@@ -404,6 +405,4 @@ int main()
     Scan(gold);
     Average(gold);
 
-}
-
-//50 55 69 65 34 56 33 76 86 55 51 50 56 87 34 23 99.9 34 65 67 76 54 45 45 40 67 54 78 56 30
+}*/
