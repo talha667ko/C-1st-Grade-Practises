@@ -443,3 +443,37 @@ int main()
     Lamps(lamps);
     return 0;
 }*/
+
+
+//    EXERCISE 11.11
+/*void Spin(int array[], int time)
+{
+    for (int i = 0; i < time; i++){
+        int yedek = array[0];
+        for (int i = 0; i < 10; i++){
+            array[i] = array[i + 1];
+        }
+        array[10 - 1] = yedek;
+    }
+    
+     printf("\nAfter spin: ");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d, ", array[i]);
+    }
+}
+int main()
+{
+    int array[10] = { 0 };
+    int HowMany = 0;
+
+    printf("Enter the array's numbers: ");
+    for (int i = 0; i < 10; i++){
+        scanf("%d", &array[i]);
+    }
+    printf("How do you want to spin: ");
+    scanf("%d", &HowMany);
+
+    Spin(array, HowMany);
+    return 0;
+}*/
