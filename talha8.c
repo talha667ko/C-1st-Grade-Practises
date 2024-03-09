@@ -406,3 +406,40 @@ int main()
     Average(gold);
 
 }*/
+
+
+//    EXERCISE 11.10
+/*void print(int lamps[])
+{
+    printf("Lamps of the circuit that are On: ");
+    for (int i = 0; i < 50; i++){
+        if(lamps[i] == 1)
+        printf("%d, ", i + 1);
+    }
+
+     printf("\nLamps of the circuit that are Off: ");
+    for (int i = 0; i < 50; i++){
+        if(lamps[i] == 0)
+        printf("%d, ", i + 1);
+    }
+}
+void Lamps(int lamps[])
+{
+    for (int i = 1; i <= 10; i++){
+        for (int j = 1; j <= 50; j++){
+            if(j % i == 0 && lamps[j - 1] == 0)
+            lamps[j - 1] = 1;
+            else if(j % i == 0 && lamps[j - 1] == 1)
+            lamps[j - 1] = 0;
+        }
+        
+    }
+    print(lamps);
+}
+int main()
+{
+    int lamps[50] = { 0 };
+    
+    Lamps(lamps);
+    return 0;
+}*/
