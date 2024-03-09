@@ -477,3 +477,30 @@ int main()
     Spin(array, HowMany);
     return 0;
 }*/
+
+int frstNotRepeat(int Nums[])
+{
+    int i = 0;
+    int a = 0;
+    for (int i = 0; i < 7; i++){
+        for (int j = 0; j < 7; j++){
+            if(Nums[i] == Nums[j] && i != j)
+                a = 0;
+            else if(Nums[i] != Nums[j] && i != j){
+                a = 1;
+            }
+            else
+                a = -1;
+        }
+        if(a == 1)
+        break;
+    }
+    return Nums[i];
+}
+int main()
+{
+    int Nums[7] = { 3, 12, 1, 12, 7, 3, 12}, c;
+
+    c = frstNotRepeat(Nums);
+    printf("The first number to not repeating: %d", c);
+}
