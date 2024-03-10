@@ -478,29 +478,36 @@ int main()
     return 0;
 }*/
 
-int frstNotRepeat(int Nums[])
+
+//    EXERCISE 11.13
+/*int frstNotRepeat(int Nums[])
 {
     int i = 0;
     int a = 0;
     for (int i = 0; i < 7; i++){
         for (int j = 0; j < 7; j++){
-            if(Nums[i] == Nums[j] && i != j)
+            if(Nums[i] == Nums[j] && i != j ){
                 a = 0;
+                break;
+            }
             else if(Nums[i] != Nums[j] && i != j){
                 a = 1;
             }
-            else
-                a = -1;
         }
-        if(a == 1)
-        break;
+        if(a == 1){
+            //printf("The first number to not repeating: %d %d %d", Nums[i], i, a);
+            return Nums[i];
+            break;
+        }
     }
-    return Nums[i];
+    if(a != 1)
+    return -1;
 }
 int main()
 {
-    int Nums[7] = { 3, 12, 1, 12, 7, 3, 12}, c;
+    int Nums[7] = { 3, 12, 3, 12, 3, 3, 10}, c;
 
     c = frstNotRepeat(Nums);
     printf("The first number to not repeating: %d", c);
-}
+    return 0;
+}*/
