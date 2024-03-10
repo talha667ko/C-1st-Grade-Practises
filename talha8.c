@@ -639,3 +639,47 @@ int main()
 
     randomNUMS(num, User, numS); 
 }*/
+
+
+//    EXERCISE 11.24
+/*void Calcul(int x, int staff[], int sale[])
+{
+    int greater = sale[0];
+
+    printf("\nThe sales difference between the best seller and the others");
+    printf("\nThe ID     : ");
+    for (int i = 0; i < x; i++){
+        printf("%d  ", staff[i]);
+    }
+    
+    for (int i = 0; i < x - 1; i++){
+        if(sale[i + 1] > sale[i]){
+            greater = sale[i + 1];
+        }
+    }
+    
+    printf("\nSales to do: ");
+    for (int i = 0; i < x; i++){
+        printf("%d   ", greater - sale[i]);
+    }
+}
+void Scan(int x, int staff[], int sale[])
+{
+    for (int i = 0; i < x; i++){
+        printf("Enter the ID and the sales of the staff: ");
+        scanf("%d %d", &staff[i], &sale[i]);
+    }
+
+    Calcul(x, staff, sale);
+}
+int main()
+{
+    int Many = 0;
+    int Staff[50] = { 0 };
+    int sales[50] = { 0 };
+
+    printf("Type the quantity of staff (50 maximum): ");
+    scanf("%d", &Many);
+
+    Scan(Many, Staff, sales);
+}*/
