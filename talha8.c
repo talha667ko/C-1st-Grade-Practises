@@ -511,3 +511,69 @@ int main()
     printf("The first number to not repeating: %d", c);
     return 0;
 }*/
+
+
+//    EXRCISE 11.16
+/*void median(int n[], int a)
+{
+    int med = 0;
+    if (a % 2 != 0){
+        med = (a + 1) / 2;
+        printf("\nThe median is: %d", n[med]);
+    }
+    else{
+        med = (a) / 2;
+        printf("\nThe median is: %d", n[med]);
+    }
+    
+}
+
+void arrange(int n[], int a)
+{
+    int replace = 0;
+    for (int i = 0; i < a - 1; i++){
+        if (n[i] > n[i + 1]){
+            replace = n[i];
+            n[i] = n[i + 1];
+            n[i + 1] = replace;
+        }
+    }
+
+    printf("\nThe array arranged : ");
+    for (int i = 0; i < a; i++){
+        printf("%d, ", n[i]);
+    }
+    printf("\n");
+    for (int i = 0; i < 50; i++){
+        printf("%d, ", n[i]);
+    }
+
+    median(n, a);
+}
+
+void randomNUMS(int n[], int a)
+{
+    srand(time(NULL));
+
+    for (int i = 0; i < a; i++){
+        n[i] = rand() % 100;
+    }
+
+    printf("\nThe array done by the computer: ");
+    for (int i = 0; i < a; i++){
+        printf("%d, ", n[i]);
+    }
+    arrange(n, a);
+}
+
+int main()
+{
+    int User = 0;
+    printf("Enter how numbers you want: ");
+    scanf("%d", &User);
+
+
+    int num[50] = { 0 };
+
+    randomNUMS(num, User);
+}*/
