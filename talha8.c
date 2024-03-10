@@ -516,26 +516,27 @@ int main()
 //    EXRCISE 11.16
 /*void median(int n[], int a)
 {
-    int med = 0;
+    float med = 0;
     if (a % 2 != 0){
-        med = (a + 1) / 2;
-        printf("\nThe median is: %d", n[med]);
+        med = n[((a + 1) / 2) + 1];
+        printf("\nThe median is: %d", med);
     }
     else{
-        med = (a) / 2;
-        printf("\nThe median is: %d", n[med]);
+        med = (float)(n[(a / 2) - 1] + n[((a + 2) / 2) - 1])/2;
+        printf("\nThe median is: %.1f", med);
     }
-    
 }
 
 void arrange(int n[], int a)
 {
     int replace = 0;
-    for (int i = 0; i < a - 1; i++){
-        if (n[i] > n[i + 1]){
-            replace = n[i];
-            n[i] = n[i + 1];
-            n[i + 1] = replace;
+    for(int cross = 1; cross < a-1; cross++){   
+        for (int i = 0; i < a - 1; i++){
+            if (n[i] > n[i + 1]){
+                replace = n[i];
+                n[i] = n[i + 1];
+                n[i + 1] = replace;
+            }
         }
     }
 
@@ -543,11 +544,7 @@ void arrange(int n[], int a)
     for (int i = 0; i < a; i++){
         printf("%d, ", n[i]);
     }
-    printf("\n");
-    for (int i = 0; i < 50; i++){
-        printf("%d, ", n[i]);
-    }
-
+    
     median(n, a);
 }
 
@@ -576,4 +573,69 @@ int main()
     int num[50] = { 0 };
 
     randomNUMS(num, User);
+}*/
+
+
+//    EXERCISE 11.18
+/*void search(int n[], int nS[], int a)
+{
+    int changes = a;
+    for (int i = 0; i < a; i++){
+        if (nS[i] != n[i]){
+            changes--;
+        }
+    }
+    printf("\n%d haven't changed place.", changes);
+}
+
+void arrange(int n[], int a)
+{
+    int replace = 0;
+    for(int change = 1; change < a-1; change++){   
+        for (int i = 0; i < a - 1; i++){
+            if (n[i] > n[i + 1]){
+                replace = n[i];
+                n[i] = n[i + 1];
+                n[i + 1] = replace;
+            }
+        }
+    }
+
+    printf("\nThe array arranged : ");
+    for (int i = 0; i < a; i++){
+        printf("%d, ", n[i]);
+    }
+}
+
+void randomNUMS(int n[], int a, int nS[])
+{
+    srand(time(NULL));
+
+    for (int i = 0; i < a; i++){
+        n[i] = rand() % 100;
+    }
+
+    printf("\nThe array done by the computer: ");
+    for (int i = 0; i < a; i++){
+        printf("%d, ", n[i]);
+    }
+
+    for (int i = 0; i < a; i++){
+        nS[i] = n[i];
+    }
+    
+    arrange(n, a);
+    search(n, nS, a);
+}
+
+int main()
+{
+    int numS[50] = { 0 };
+    int num[50] = { 0 };
+    int User = 0;
+
+    printf("Enter how many numbers you want: ");
+    scanf("%d", &User);
+
+    randomNUMS(num, User, numS); 
 }*/
