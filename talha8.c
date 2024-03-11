@@ -721,3 +721,54 @@ int main()
 
     return 0;
 }*/
+
+
+//    EXERCISE 11.27
+/*void arrange(float tall[], float small[])
+{
+    printf("\nThe heights mixed, one small one tall:\n ");
+    for (int i = 0; i < 6; i++){
+        printf("%.2f ", small[i]);
+        printf("%.2f ", tall[i]);
+    }
+    
+}
+void separate(float team[], float tall[], float small[])
+{
+    float rplcmnt;
+
+    for (int pass = 1; pass < 12; pass++){
+        for (int i = 0; i < 12 - 1; i++){
+            if (team[i] > team[i + 1]){
+                rplcmnt = team[i];
+                team[i] = team[i + 1];
+                team[i + 1] = rplcmnt;
+            }
+        }    
+    }
+    
+    for (int i = 0; i < 6; i++){
+        small[i] = team[i];
+    }
+    int j = 0;
+    for (int i = 11; i > 5; i--){
+        tall[j] = team[i];
+        j++;
+    }
+    
+}
+int main()
+{
+    float team[12] = { 0 };
+    float tall[6] = { 0 };
+    float small[6] = { 0 };
+
+    printf("Enter the height of every player: ");
+    for (int i = 0; i < 12; i++){
+        scanf("%f", &team[i]);
+    }
+
+    separate(team, tall, small);
+    arrange(tall, small);
+    
+}*/
