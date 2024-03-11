@@ -683,3 +683,41 @@ int main()
 
     Scan(Many, Staff, sales);
 }*/
+
+
+//    EXERCISE 11.26
+/*int Croissant(int suite[], int cmb)
+{
+    int controle;
+
+        for (int i = 0; i < cmb - 1; i++){
+            if(suite[i] < suite[i + 1]){
+                controle = 1;
+            }
+            else{
+                controle = 0;
+                break;
+            }
+        }
+    return controle;
+}
+int main()
+{
+    int suite[100] = { 0 };
+    int cmb = 0;
+
+    printf("Entrez le nombre d'élément de votre suite: ");
+    scanf("%d", &cmb);
+    printf("Entrez une suite de nombre: ");
+    for (int i = 0; i < cmb; i++){
+        scanf("%d", &suite[i]);
+    }
+
+    if (Croissant(suite, cmb) == 1){
+        printf("\nVotre suite est bien classé dans l'ordre croissant.");
+    }
+    else
+        printf("\nLes éléments de votre suite ne sont pas dans l'ordre croissant.");
+
+    return 0;
+}*/
