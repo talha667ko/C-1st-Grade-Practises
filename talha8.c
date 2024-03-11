@@ -772,3 +772,60 @@ int main()
     arrange(tall, small);
     
 }*/
+
+#define N 3
+
+void print(int m[][N], int row[], int column[])
+{
+    for(int i =0; i < N; i++){
+        for(int j = 0; j < N; j++){
+            printf("%d ", m[i][j]);
+            if(j == N - 1)
+            printf("%d\n", row[i]);
+        }
+    }
+    for(int i =0; i < N; i++){
+        printf("%d ", column[i]);
+    }
+
+}
+void sum(int m[][N])
+{
+    int row[3] = { 0 };
+    int column[3] = { 0 };
+
+    for(int i = 0; i < N; i++){
+        for(int j = 0; j < N; j++){
+            row[i] = row[i] + m[i][j];
+        }
+    }
+     for(int i = 0; i < N; i++){
+        for(int j = 0; j < N; j++){
+            column[i] = column[i] + m[j][i];
+        }
+    }
+    print(m, row, column);
+}
+void scan(int m[N][N], int k)
+{
+    for(int i = 0; i < N; i++){
+        scanf("%d", &m[k][i]);
+    }
+}
+int main()
+{
+    int matrix[N][N] = { 0 };
+    int k = 0;
+
+    printf("Enter the values of the 1st row: ");
+    scan(matrix, k);
+    k = k + 1;
+    printf("Enter the values of the 2nd row: ");
+    scan(matrix, k);
+    k = k + 1;
+    printf("Enter the values of the 3rd row: ");
+    scan(matrix, k);
+
+    sum(matrix);
+    return 0;
+}
