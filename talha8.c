@@ -773,7 +773,9 @@ int main()
     
 }*/
 
-#define N 3
+
+//    EXERCISE 11.53
+/*#define N 3
 
 void print(int m[][N], int row[], int column[])
 {
@@ -828,4 +830,49 @@ int main()
 
     sum(matrix);
     return 0;
+}*/
+
+
+//    EXERCISE 11.57
+/*#define N 8
+
+void printTable(int chess[][N], int x, int y)
+{
+    printf(" ");
+    for (int j = 0; j < N; j++){
+        printf(" %d", j);
+        if(j == N - 1)
+        printf("\n");
+    }
+    
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            if(j == 0)
+            printf("%d ", i);
+
+            if(i == x && j == y)
+            printf("A ");
+            else if(i == x-2 && j == y+1 || i == x-2 && j == y-1 || i == x-1 && j == y+2 || i == x-1 && j == y-2 ||
+                     i == x+2 && j == y+1 || i == x+2 && j == y-1 || i == x+1 && j == y+2 || i == x+1 && j == y-2)
+                     printf("* ");
+            else
+                printf("- ");
+
+            if(j == N-1)
+            printf("\n");
+        }
+        
+    }
+    
 }
+int main()
+{
+    int chess[N][N] = { 0 };
+    int row;
+    int column;
+
+    printf("Enter the the localisation of your horse (row, column): ");
+    scanf("%d %d", &row, &column);
+    
+    printTable(chess, row, column);
+}*/
