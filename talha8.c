@@ -930,9 +930,7 @@ int main()
     {
         for (int j = 0; j < 2; j++){
             bombs[i][j]= rand() % 8;
-            printf("%d ", bombs[i][j]);
         }
-        printf("\n");
     }
 
     printTable(chess, bombs);
