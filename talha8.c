@@ -833,7 +833,7 @@ int main()
 }*/
 
 
-//    EXERCISE 11.57
+//    EXERCISE 11.54
 /*#define N 8
 
 void printTable(int chess[][N], int x, int y)
@@ -878,7 +878,7 @@ int main()
 }*/
 
 
-//    EXERCISE 11.56
+//    EXERCISE 11.55
 /*#define N 8
 
 int search(int b[][2], int x, int y)
@@ -937,4 +937,53 @@ int main()
 
     printTable(chess, bombs);
     
+}*/
+
+
+//    EXERCISE 11.56
+/*#define N 5
+#define M 4
+
+void whereIsIt(int c[][M])
+{
+    int totalA = 0;
+    int road = 0;
+
+
+    for (int i = 0; i < N; i++){
+        int total = 0;
+        for (int j = 0; j < M; j++){
+            total = total + c[i][j];
+        }
+        if(total > totalA){
+            totalA = total;
+            road = i;
+        }
+    }
+    
+    int cheese = 0;
+    for (int i = 0; i < M; i++){
+        cheese = cheese + c[road][i];
+        if(cheese >= 5){
+            printf("\nThe mouse slept at the part %d of the canal %d.", i+1, road+1);
+            break;
+        }
+
+    }
+    
+}
+
+int main()
+{
+    int canal[N][M]= { 0 };
+
+    printf("Enter the cheese weight.\n");
+    for(int i = 0; i < N; i++){
+        printf("%d. canal (From the 1st part to the 4th): ", i+1);
+        for (int j = 0; j < M; j++){
+            scanf("%d", &canal[i][j]);
+        } 
+    }
+
+    whereIsIt(canal);
 }*/
