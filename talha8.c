@@ -876,3 +876,65 @@ int main()
     
     printTable(chess, row, column);
 }*/
+
+
+//    EXERCISE 11.56
+/*#define N 8
+
+int search(int b[][2], int x, int y)
+{
+    for (int i = 0; i < 9; i++){
+        if(b[i][0] == x && b[i][1] == y)
+        return 1;
+    }
+   return 0;
+}
+void printTable(int chess[][N], int bomb[][2])
+{
+    int k = 0;
+
+    printf(" ");
+    for (int j = 0; j < N; j++){
+        printf(" %d", j);
+        if(j == N - 1)
+        printf("\n");
+    }
+    
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            if(j == 0)
+            printf("%d ", i);
+            
+            if(search(bomb, i, j)){
+                printf("* ");
+                k = k + 1;
+            }
+            else
+                printf("- ");
+            
+            if(j == N-1){
+            printf("\n");
+            }
+        }
+        
+    }
+    
+}
+int main()
+{
+    int chess[N][N] = { 0 };
+    int bombs[9][2]= { 0 };
+    srand(time(NULL));
+
+    for (int i = 0; i < 9; i++)
+    {
+        for (int j = 0; j < 2; j++){
+            bombs[i][j]= rand() % 8;
+            printf("%d ", bombs[i][j]);
+        }
+        printf("\n");
+    }
+
+    printTable(chess, bombs);
+    
+}*/
