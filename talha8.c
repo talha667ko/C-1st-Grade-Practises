@@ -1053,7 +1053,7 @@ int main()
 
 void rightUnder(int m[][N])
 {
-    int smaller = m[N][N];
+    int smaller = m[N-1][N-1];
 
     for (int i = 0; i < N; i++){
         for (int j = 0; j < N; j++){
