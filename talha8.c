@@ -1016,3 +1016,33 @@ int main()
     
     diagonal(matrix);
 }*/
+
+
+//    EXERCISE 11.61
+/*#define N 3
+
+void transpose(int a[][N])
+{
+    
+    printf("\nThe matrix' transpose:\n");
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            printf("%d ", a[j][i]);
+        }
+        printf("\n");
+    }
+    
+}
+int main()
+{
+    int matrix[N][N] = { 0 };
+    
+    for (int i = 0; i < N; i++){
+        printf("Enter the row %d (3 numbers): ", i+1);
+        for (int j = 0; j < N; j++){
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    transpose(matrix);
+}*/
