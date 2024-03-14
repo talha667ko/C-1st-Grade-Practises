@@ -985,3 +985,34 @@ int main()
 
     whereIsIt(canal);
 }*/
+
+
+//    EXERCISE 11.57
+/*#define N 3
+
+void diagonal(int m[][N])
+{
+    int sum = 0;
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            if(i == j || i == N - 1 - j){
+                sum = sum + m[i][j];
+            }
+        } 
+    }
+    
+    printf("\nThe sum of the diagonals of your matrix is: %d", sum);
+}
+int main()
+{
+    int matrix[N][N] = { 0 };
+    
+    printf("Enter the values of your matrix: ");
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+    
+    diagonal(matrix);
+}*/
