@@ -1046,3 +1046,35 @@ int main()
 
     transpose(matrix);
 }*/
+
+
+//    EXERCISE 11.65
+/*#define N 10
+
+void rightUnder(int m[][N])
+{
+    int smaller = m[N][N];
+
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < N; j++){
+            if(i + j >= N && m[i][j] < smaller){
+                smaller = m[i][j];
+            }
+        }
+    }
+    printf("\nThe right under tiangle's smaller number: %d", smaller);
+}
+
+int main()
+{
+    int matrix[N][N] = { 0 };
+    
+    for (int i = 0; i < N; i++){
+        printf("Enter the row %d (10 numbers): ", i+1);
+        for (int j = 0; j < N; j++){
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    rightUnder(matrix);
+}*/
