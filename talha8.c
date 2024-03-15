@@ -1078,3 +1078,56 @@ int main()
 
     rightUnder(matrix);
 }*/
+
+
+//    EXERCISE 11.64
+/*#define N 4
+#define M 3
+
+void print(int m[][M])
+{
+    for (int i = 0; i < N; i++){
+        for (int j = 0; j < M; j++){
+            printf("%d ", m[i][j]);
+        }
+        printf("\n");
+    }
+    
+}
+
+void sort(int m[][M])
+{
+    int rplcmt;
+
+    for (int pass = 1; pass < N*M; pass++){
+        for (int i = 0; i < N; i++){
+            for (int j = 0; j < M-1; j++){
+                if(m[i][j] >  m[i][j+1]){
+                    rplcmt = m[i][j];
+                    m[i][j] = m[i][j+1];
+                    m[i][j+1] = rplcmt;
+                }
+            }
+            
+        }
+        
+    }
+    printf("\nThe array sorted:\n");
+    print(m);
+}
+
+int main()
+{
+    int matrix[N][M] = { 0 };
+    
+    for (int i = 0; i < N; i++){
+        printf("Enter the row %d (%d numbers): ", i+1, M);
+        for (int j = 0; j < M; j++){
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    printf("The array in disorder:\n");
+    print(matrix);
+    sort(matrix);
+}*/
