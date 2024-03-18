@@ -87,3 +87,60 @@ int main()
     printf("Your value isn't in the matrix.");
 
 }*/
+
+
+//    EXERCISE 12.3
+/*void separate(int num, int *oP, int *tP, int *hP, int *thP)
+{
+    if (num > 0)
+    {
+        *oP = num %10;
+        num = num/10;
+    }
+    if (num > 0)
+    {
+        *tP = num %10;
+        num = num/10;
+    }
+    if (num > 0)
+    {
+        *hP = num %10;
+        num = num/10;
+    }
+    if (num > 0)
+    {
+        *thP = num %10;
+    }
+}
+
+int main()
+{
+    int one = -1;
+    int ten = -1;
+    int hundred = -1;
+    int thousands = -1;
+    int num;
+
+    printf("Enter a number (Max 4 digits): ");
+    scanf("%d", &num);
+
+    separate(num,&one,&ten,&hundred,&thousands);
+
+    if (one >= 0)
+    {
+        printf("\nThe ones' digit: %d", one);
+    }
+    if (ten >= 0)
+    {
+        printf("\nThe tens' digit: %d", ten);
+    }
+    if (hundred >= 0)
+    {
+        printf("\nThe hundreds' digit: %d", hundred);
+    }
+    if (thousands >= 0)
+    {
+        printf("\nThe thousands' digit: %d", thousands);
+    }
+    
+}*/
