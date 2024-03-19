@@ -144,3 +144,64 @@ int main()
     }
     
 }*/
+
+
+//    EXERCISE 12.5
+/*void spin(int *ap,int *bp,int *cp, int *dp, char T)
+{
+    int rplcmt;
+
+    switch (T)
+    {
+    case 'H':
+    case 'h':
+        rplcmt = *dp;
+        *dp = *cp;
+        *cp = *bp;
+        *bp = *ap;
+        *ap = rplcmt;
+        break;
+    case 'R':
+    case 'r':
+        rplcmt = *ap;
+        *ap = *bp;
+        *bp = *cp;
+        *cp = *dp;
+        *dp = rplcmt;
+        break;
+    default:
+        break;
+    }
+
+
+}
+int main()
+{
+    int num1;
+    int num2;
+    int num3;
+    int num4;
+    char turning;
+    int howMany;
+
+    printf("Enter natural 4 numbers: ");
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    scanf("%d", &num3);
+    scanf("%d", &num4);
+
+    printf("Wich direction do you wanna spin (hour direction H, reverse R): ");
+    scanf(" %c", &turning);
+
+    printf("\nHow many times times do you wanna spin it: ");
+    scanf("%d", &howMany);
+
+    printf("\nThe numbers before spinning: %d %d %d %d", num1, num2, num3, num4);
+    for (int i = 0; i < howMany; i++){
+        spin(&num1,&num2,&num3,&num4,turning);
+    }
+
+    printf("\nThe numbers after spinning: %d %d %d %d", num1, num2, num3, num4);
+    
+    return 0;
+}*/
