@@ -205,3 +205,24 @@ int main()
     
     return 0;
 }*/
+
+
+//    EXERCISE 12.7
+/*void dissect(int *dp, int *mp, int *yp)
+{
+    *yp = *dp /365;
+    *dp = *dp %365;
+    *mp = *dp /30;
+    *dp = *dp %30;
+}
+int main()
+{
+    int days;
+    int months = 0;
+    int years = 0;
+
+    printf("Enter the number of days: ");
+    scanf("%d", &days);
+    dissect(&days,&months,&years);
+    printf(" This time is %d year(s), %d month(s), %d day(s).", years, months, days);
+}*/
