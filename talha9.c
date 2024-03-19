@@ -226,3 +226,38 @@ int main()
     dissect(&days,&months,&years);
     printf(" This time is %d year(s), %d month(s), %d day(s).", years, months, days);
 }*/
+
+
+
+//    EXERCISE 12.9
+/*void bipper(int id, char *bp, int *fp, int *wp)
+{
+    switch (id /1000)
+    {
+    case 1:
+        *bp = 'A';
+        break;
+    case 2:
+        *bp = 'B';
+        break;
+    case 3:
+        *bp = 'C';
+        break;
+    }
+
+    *fp = (id /10) %100;
+    *wp = id %10;
+}
+int main()
+{
+    int id;
+    char block;
+    int flat;
+    int which;
+
+    printf("Enter your vehicle's ID: ");
+    scanf("%d", &id);
+
+    bipper(id,&block,&flat,&which);
+    printf("This belong to the person living in block %c, flat n°%d, and his %d. car.", block, flat, which);
+}*/
