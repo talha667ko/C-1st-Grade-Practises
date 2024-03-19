@@ -261,3 +261,32 @@ int main()
     bipper(id,&block,&flat,&which);
     printf("This belong to the person living in block %c, flat n°%d, and his %d. car.", block, flat, which);
 }*/
+
+
+//    EXERCISE 12.11
+/*void purchase(float price, float *mp, int *op, int *hp, int *qp)
+{
+    *op = floor(*mp / price);
+    *mp = *mp - (*op * price);
+    *hp = floor(*mp / (price /2));
+    *mp = *mp - (*hp * (price /2));
+    *qp = floor(*mp / (price /4));
+    *mp = *mp - (*qp * (price /4));
+}
+int main()
+{
+    int one = 0;
+    int half = 0;
+    int quarter = 0;
+    float money;
+    float price;
+
+    printf("How many do you have (€): ");
+    scanf("%f", &money);
+    printf("How many cost one gold: ");
+    scanf("%f", &price);
+
+    purchase(price,&money,&one,&half,&quarter);
+    printf("You can purchase %d full gold, %d half gold, %d quarter gold.", one, half, quarter);
+    printf("\nYour overage: %.2f€", money);
+}*/
