@@ -348,3 +348,36 @@ int main()
     printf("\nThe tour needs %d bus.", bus);
     printf("\nThe empty seat is %d.", seat);
 }*/
+
+
+//    EERCISE 12.17
+/*void digit(int num, int *gp, int *sp)
+{
+    *gp = num %10;
+    *sp = num %10;
+    num = num /10;
+
+    while (num > 0)
+    {
+        if(*gp < num %10)
+        *gp = num %10;
+        if(*sp > num %10)
+        *sp = num %10;
+
+        num = num /10;
+    }
+    
+}
+int main()
+{
+    int number;
+    int digitG;
+    int digitS;
+
+    printf("Enter a number: ");
+    scanf("%d", &number);
+
+    digit(number,&digitG,&digitS);
+    printf("\nGreatest digit: %d", digitG);
+    printf("\nSmallest digit: %d", digitS);
+}*/
