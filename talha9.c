@@ -290,3 +290,37 @@ int main()
     printf("You can purchase %d full gold, %d half gold, %d quarter gold.", one, half, quarter);
     printf("\nYour overage: %.2f€", money);
 }*/
+
+
+//    EXERCISE 12.15
+/*void eggNumbers(char g, int num, int C[], int *ep)
+{
+    *ep = (num *100)/90;
+    switch (g)
+    {
+    case 'M':
+        C[0] = 28;
+        C[1] = 31;
+        break;
+    case 'F':
+        C[0] = 33;
+        C[1] = 34;
+        break;
+    }
+}
+int main()
+{
+    char gender;
+    int num;
+    int degree[2];
+    int eggs;
+
+    printf("What gender do you want you tadpole to be (M)ale, (F)emale: ");
+    scanf("%c", &gender);
+    printf("How many tadpole do you want: ");
+    scanf("%d", &num);
+
+    eggNumbers(gender,num,degree,&eggs);
+    printf("\nThe nest's degree (°C): %d °C - %d °C", degree[0], degree[1]);
+    printf("\nHow many eggs you need to put in the nest: %d", eggs);
+}*/
