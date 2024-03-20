@@ -324,3 +324,27 @@ int main()
     printf("\nThe nest's degree (°C): %d °C - %d °C", degree[0], degree[1]);
     printf("\nHow many eggs you need to put in the nest: %d", eggs);
 }*/
+
+
+//    EXERCISE 12.16
+/*void Tour(int p, int *bp, int *sp)
+{
+    *bp = p /46;
+    if(p %46 > 0)
+    *bp = *bp +1;
+
+    *sp = (*bp *46)- p;
+}
+int main()
+{
+    int people;
+    int bus = 0;
+    int seat;
+
+    printf("How many people will be in the tour: ");
+    scanf("%d", &people);
+
+    Tour(people,&bus,&seat);
+    printf("\nThe tour needs %d bus.", bus);
+    printf("\nThe empty seat is %d.", seat);
+}*/
