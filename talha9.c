@@ -458,3 +458,33 @@ int main()
     return 0;
 
 }*/
+
+
+//	EXERCISE 12.25
+/*void primeNUM(int *np)
+{
+    int test = 1;
+
+    if(*np == 1)
+        test = 0;
+    for(int j = *np +1; ; j++){
+        test = 1;
+        for (int i = j -1; i > 1 && test == 1; i--){
+            if(j % i == 0)
+                test = 0;
+        }
+        if(test){
+            *np = j;
+            break;}
+    }
+    
+}
+int main()
+{
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+
+    primeNUM(&num);
+    printf("Your num has become the prime number : %d", num);
+}*/
