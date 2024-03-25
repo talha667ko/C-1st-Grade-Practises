@@ -488,3 +488,28 @@ int main()
     primeNUM(&num);
     printf("Your num has become the prime number : %d", num);
 }*/
+
+//    EXERCISE 12.26
+/*void simplify(int *one, int *two)
+{
+    for (int i = 1; i <= *one && i <= *two; i++)
+    {
+        if (*one % i == 0 && *two % i == 0)
+        {
+            *one = *one /i;
+            *two = *two /i;
+        }
+    }
+}
+int main()
+{
+    int num1;
+    int num2;
+
+    printf("Enter the divided and the divider: ");
+    scanf("%d %d", &num1, &num2);
+
+    printf("\nThe first apperence of your division: %d / %d", num1, num2);
+    simplify(&num1,&num2);
+    printf("\nYor division simpliflied: %d / %d", num1, num2);
+}*/
