@@ -513,3 +513,29 @@ int main()
     simplify(&num1,&num2);
     printf("\nYor division simpliflied: %d / %d", num1, num2);
 }*/
+
+
+//    EXERCISE 12.27
+/*void findApoint(int mx, int my, int r, int *x, int *y)
+{
+    labe:
+    *x = rand() %20;
+    *y = rand() %20;
+
+    if (sqrt(pow((mx-*x),2) + pow((my-*y),2)) <= 6)
+    {
+        printf("%f\n", sqrt(pow((mx-*x),2) + pow((my-*y),2)));
+    }
+    else
+    goto labe;
+    
+}
+int main()
+{
+    srand(time(NULL));
+    int mx =2, my =5, r =6;
+    int x, y;
+
+    findApoint(mx,my,r,&x,&y);
+    printf("\nx,y = %d , %d", x, y);
+}*/
