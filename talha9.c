@@ -418,3 +418,43 @@ int main()
     greater(day1,day2,&dayg,month1,month2,&monthg,year1,year2,&yearg);
     printf("The greater date is: %d / %d / %d", dayg, monthg, yearg);
 }*/
+
+
+//	EXERCISE 12.24
+/*void permutCombin(int n, int r, double *p, double *c)
+{
+    int nfact = 1;
+    int rfact = 1;
+    int NminusRf = 1;
+    int NminR = n - r;
+
+    while (n > 0)
+    {
+        nfact = nfact * n;
+        n--;
+    }
+    while (r > 0)
+    {
+        rfact = rfact * r;
+        r--;
+    }
+    while (NminR > 0)
+    {
+        NminusRf = NminusRf * NminR;
+        NminR--;
+    }
+    
+    *p = nfact / NminusRf;
+    *c = *p / rfact;
+}
+int main()
+{
+    int n = 3, r = 2;
+    double p = 0,c = 0;
+
+    permutCombin(n,r,&p,&c);
+    printf("Permutation: %.1f\n"
+           "Combination: %.1f\n", p, c);
+    return 0;
+
+}*/
