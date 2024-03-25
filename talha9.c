@@ -381,3 +381,40 @@ int main()
     printf("\nGreatest digit: %d", digitG);
     printf("\nSmallest digit: %d", digitS);
 }*/
+
+
+//	EXERCISE 12.19
+/*void greater(int d1, int d2, int *dg, int m1, int m2, int *mg, int y1, int y2, int *yg)
+{
+    if (y1 > y2 && m1 > m2 && d1 > d2){
+        *dg = d1;
+        *mg = m1;
+        *yg = y1;
+    }
+    else{
+        *dg = d2;
+        *mg = m2;
+        *yg = y2;
+    }
+}
+
+int main()
+{
+    int day1;
+    int month1;
+    int year1;
+    int day2;
+    int month2;
+    int year2;
+    int dayg;
+    int monthg;
+    int yearg;
+
+    printf("Enter the first date: ");
+    scanf("%d %d %d", &day1, &month1, &year1);
+
+    printf("Enter the second date: ");
+    scanf("%d %d %d", &day2, &month2, &year2);
+    greater(day1,day2,&dayg,month1,month2,&monthg,year1,year2,&yearg);
+    printf("The greater date is: %d / %d / %d", dayg, monthg, yearg);
+}*/
