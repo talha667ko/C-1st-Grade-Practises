@@ -36,3 +36,28 @@
 
     return 0;
 }*/
+
+
+//    EXERCISE 13.3
+/*int main()
+{
+    char numbers[5][5];
+    char total = 0;
+    int x;
+
+    printf("Enter 4 strings that including numbers (max 3 digits):\n");
+    for (int i = 0; i < 4; i++)
+    {
+        fgets(numbers[i],5,stdin);
+    }
+
+    for (int i = 0; i < 4; i++)
+    {
+        x = atof(numbers[i]);
+        total = total + x;
+    }
+
+    printf("The total of your numbers: %d", total);
+    
+    return 0;
+}*/
