@@ -108,3 +108,59 @@
     
     return 0;
 }*/
+
+
+//    EXERCISE 13.8
+/*int main()
+{
+    char equation[100];
+    int x;
+    char m1[10] = {0};
+    char n1[10] = {0};
+    int xIndice = 0;
+    int m2;
+    int n2;
+    int j = 0;
+
+    printf("Enter your equation (y=mx+n): ");
+    fgets(equation, 100, stdin);
+
+    printf("Enter the value of x: ");
+    scanf(" %d", &x);
+
+    for (int i = 2; equation[i] != '\0'; i++)
+    {
+        if (isalpha(equation[i]))
+        {
+            xIndice = i;
+            break;
+        }
+    }
+
+    for (int i = 2; i < xIndice; i++)
+    {
+        if (isdigit(equation[i]))
+        {
+            m1[j] = equation[i];
+            j++;
+        }
+    }
+    m1[j] = '\0';
+
+    j = 0;
+    for (int i = xIndice + 1; equation[i] != '\0'; i++)
+    {
+        if (isdigit(equation[i]))
+        {
+            n1[j] = equation[i];
+            j++;
+        }
+    }
+    n1[j] = '\0';
+
+    m2 = atoi(m1);
+    n2 = atoi(n1);
+
+    printf("\ny = %d", m2*x+n2);
+    return 0;
+}*/
