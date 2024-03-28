@@ -84,3 +84,27 @@
     printf("The result: %s", str);    
     return 0;
 }*/
+
+
+//    EXERCISE 13.6
+/*int main()
+{
+    char sentence[100];
+
+    printf("Enter your sentence: ");
+    fgets(sentence,100,stdin);
+
+    for (int i = 0; sentence[i] != '\0'; i++)
+    {
+        sentence[0] = toupper(sentence[0]);
+        if (sentence[i] == ' ')
+        {
+            sentence[i+1] = toupper(sentence[i+1]);
+        }
+        
+    }
+
+    printf("\nYour string now: %s", sentence);
+    
+    return 0;
+}*/
