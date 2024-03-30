@@ -539,3 +539,46 @@ int main()
     findApoint(mx,my,r,&x,&y);
     printf("\nx,y = %d , %d", x, y);
 }*/
+
+
+//    EXERCISE 
+/*int countLetter(const char *s)
+{
+    int i;
+    for (i = 0; s[i] != '\0'; i++){
+
+    }
+    return i;
+}
+
+void unify(char *s1, const char *s2, int n1, int n2)
+{
+    int j = 0;
+    for (int i = n1-1; i < n1+n2+1; i++)
+    {
+        s1[i] = s2[j];
+        j++;
+    }
+    
+}
+
+int main()
+{
+    char str1[200];
+    char str2[100];
+    int str1_N;
+    int str2_N;
+
+    printf("Enter the 1st sentence: ");
+    fgets(str1,200,stdin);
+    printf("Enter the 2nd sentence: ");
+    fgets(str2,100,stdin);
+
+    str1_N = countLetter(str1);
+    str2_N = countLetter(str2);
+
+    unify(str1,str2,str1_N,str2_N);
+    printf("The sentences unified: ");
+    puts(str1);
+    return 0;
+}*/
