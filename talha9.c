@@ -582,3 +582,112 @@ int main()
     puts(str1);
     return 0;
 }*/
+
+void convert(const char frst[],const char result[], char m[])
+{
+    float measure;
+    int f = atoi(frst);
+    int r = atoi(result);
+    printf("\n%d %d",f,r);
+    measure = atof(m);
+    switch (f)
+    {
+    case 216:
+        switch (r)
+        {
+        case 109:
+            measure = measure *1000;
+            break;
+        case 'mm':
+            measure = measure *1000000;
+            break;
+        default:
+            printf("\nYou have enterend a wrong unit (2).");
+            break;
+        }
+        break;
+    case 'm':
+        switch (r)
+        {
+        case 'km':
+            measure = measure /1000;
+            break;
+        case 'mm':
+            measure = measure *1000;
+            break;
+        default:
+            printf("\nYou have enterend a wrong unit (2).");
+            break;
+        }
+        break;
+    case 'mm':
+        switch (r)
+        {
+        case 'm':
+            measure = measure /1000;
+            break;
+        case 'km':
+            measure = measure /1000000;
+            break;
+        default:
+            printf("\nYou have enterend a wrong unit (2).");
+            break;
+        }
+        break;
+    default:
+        printf("\nYou have enterend a wrong unit (1).");
+        break;
+    }
+
+    printf("\n%s%s, is %.2f%s.",m, frst,measure,result);
+    
+}
+
+void stating(char h[], char frst[], char result[], char m[])
+{
+    int space = 0;
+    int j = 0;
+    int k = 0;
+    for (int i = 0; h[i] != '\0'; i++)
+    {
+        if (isdigit(h[i]) && space == 0)
+        {
+            m[i] = h[i];
+        }
+        else if (isalpha(h[i]) && space == 0)
+        {
+            frst[j] = h[i];
+            j++;
+        }
+        
+        if (isspace(h[i]))
+        {
+            space++;
+        }
+        if (isalpha(h[i]) && space == 3)
+        {
+            result[k] = h[i];
+            k++;
+            printf("3.%c", h[i]);
+        }
+    }
+    
+    printf("\n%s  %s  %s", frst,result,m);
+}
+
+int main()
+{
+    char heights[50];
+    char first[2];
+    char final[2];
+    char measure[10];
+
+    printf("Enter your question: ");
+    //  The question have to be wrotten alike: "Xm how many km"
+    fgets(heights,50,stdin);
+
+    stating(heights,first,final,measure);
+    convert(first,final,measure);
+
+    return 0;
+}
