@@ -691,3 +691,32 @@ int main()
 
     return 0;
 }
+
+//    ASCII Table***
+/*int main() 
+{
+    char s1[200];
+    for (int i = 0; i < 32; i++)
+    {
+        int column1 = i;
+        int column2 = i+32;
+        int column3 = i+64;
+        int column4 = i+96;
+
+        if(!isprint(column1)){
+            column1 = ' ';
+        }
+        if(!isprint(column2)){
+            column2 = ' ';
+        }
+        if(!isprint(column3)){
+            column3 = ' ';
+        }
+        if(!isprint(column4)){
+            column4 = ' ';
+        }
+        sprintf(s1,"|%5d|%5c||%5d|%5c||%5d|%5c||%5d|%5c|", i,column1,i+32,column2,i+64,column3,i+96,column4);
+        puts(s1);
+    }
+    return 0;
+}*/
