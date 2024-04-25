@@ -720,3 +720,58 @@ int main()
     }
     return 0;
 }*/
+
+//    NUMBER CHARACTERISTICS TABLE***
+/*int prime(int x)
+{
+    if(x < 2)
+        return 1;
+    
+    int flag=0;
+    for (int i = x-1; i>1; i--)
+    {
+        if(x%i == 0 && x != i)
+        flag = 1;
+
+        if(flag)
+        return 0;
+    }
+
+    return 1;
+}
+
+int main() 
+{
+    char s1[200];
+    for (int i = 1; i < 101; i++)
+    {
+        char s1[150];
+        int inum;
+        float fnum;
+        char features[10];
+        char sign[5];
+        
+        if(prime(i)){
+            fnum = (float) i*i;
+            inum = i*i;
+            sprintf(features,"Primar");
+            sprintf(sign,"^^");
+        }
+        else if(i%2 != 0){
+            fnum = (float) i /2;
+            inum = i /2;
+            sprintf(features,"Odd");
+            sprintf(sign,"//");
+        }
+        else if(i%2 == 0){
+            fnum = (float)i*2;
+            inum = i*2;
+            sprintf(features,"Pair");
+            sprintf(sign,"><");
+        }
+
+        sprintf(s1,"|%3d(%6s)|...%s...|%5d|..>>..|%10.4f|",i,features,sign,inum,fnum);
+        puts(s1);
+    }
+    return 0;
+}*/
