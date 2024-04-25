@@ -725,7 +725,7 @@ int main()
 /*int prime(int x)
 {
     if(x < 2)
-        return 1;
+        return 0;
     
     int flag=0;
     for (int i = x-1; i>1; i--)
