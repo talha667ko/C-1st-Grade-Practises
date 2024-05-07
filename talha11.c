@@ -236,3 +236,64 @@ int main()
     addtime(&t1,t2);
     printf("\nYour new time: %d:%d:%d",t1.hour,t1.min,t1.sc);
 }*/
+
+
+//    EXERCISE 16.5
+/*struct zaman{
+    int hour;
+    int min;
+    int sc;
+
+};
+void compare(struct zaman *ptr1,struct zaman *ptr2)
+{
+    int rhour;
+    int rmin;
+    int rsc;
+    if (ptr2->hour < ptr1->hour)
+    {
+        rhour=ptr1->hour;
+        ptr1->hour = ptr2->hour;
+        ptr2->hour =rhour;
+        rmin=ptr1->min;
+        ptr1->min = ptr2->min;
+        ptr2->min =rmin;
+        rsc=ptr1->sc;
+        ptr1->sc = ptr2->sc;
+        ptr2->sc =rsc;
+    }
+    else if (ptr2->min < ptr1->min && ptr2->hour == ptr1->hour)
+    {
+        rhour=ptr1->hour;
+        ptr1->hour = ptr2->hour;
+        ptr2->hour =rhour;
+        rmin=ptr1->min;
+        ptr1->min = ptr2->min;
+        ptr2->min =rmin;
+        rsc=ptr1->sc;
+        ptr1->sc = ptr2->sc;
+        ptr2->sc =rsc;
+    }
+    else if (ptr2->sc < ptr1->sc && ptr2->min == ptr1->min && ptr2->hour == ptr1->hour)
+    {
+        rhour=ptr1->hour;
+        ptr1->hour = ptr2->hour;
+        ptr2->hour =rhour;
+        rmin=ptr1->min;
+        ptr1->min = ptr2->min;
+        ptr2->min =rmin;
+        rsc=ptr1->sc;
+        ptr1->sc = ptr2->sc;
+        ptr2->sc =rsc;
+    }
+}
+int main()
+{
+    typedef struct zaman Time;
+    Time t1 ={2,23,0};
+    Time t2 ={2,0,40};
+
+    compare(&t1,&t2);
+    printf("\n1.time: %d:%d:%d",t1.hour,t1.min,t1.sc);
+    printf("\n2.time: %d:%d:%d",t2.hour,t2.min,t2.sc);
+}*/
