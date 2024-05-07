@@ -78,3 +78,77 @@ int main()
     write(a);
     
 }*/
+
+
+//    EXERCISE 16.2
+/*struct student
+{
+    char name[20];
+    char surname[20];
+    float point;
+
+}a[10];
+
+void read(struct student *ptr,char input[],int i)
+{
+    sscanf(input,"%[^;];%[^;];",ptr->name,ptr->surname);
+}
+void write(struct student ptr[])
+{
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%s %s %.2f\n",ptr->name,ptr->surname,ptr->point);
+        ptr++;
+    }
+}
+void compare(struct student *ptr)
+{
+    char rname[20];
+    char rsurname[20];
+    float rpoint;
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 9; j++)
+        {
+            for (int k = 1; k < strlen(ptr[j].surname); k++)
+            {
+            printf("result :%d k:%d j:%d\n", strncmp(ptr[j].surname,ptr[j+1].surname,k*sizeof(char)),k,j);
+             
+            if(strncmp(ptr[j].surname,ptr[j+1].surname,k*sizeof(char)) >= 1)
+            {
+                strcpy(rname,ptr[j+1].name);
+                strcpy(ptr[j+1].name,ptr[j].name);
+                strcpy(ptr[j].name,rname);
+                strcpy(rsurname,ptr[j+1].surname);
+                strcpy(ptr[j+1].surname,ptr[j].surname);
+                strcpy(ptr[j].surname,rsurname);
+                rpoint = ptr[j+1].point;
+                ptr[j+1].point = ptr[j].point;
+                ptr[j].point = rpoint;
+                break;
+            }
+            else if (strncmp(ptr[j].surname,ptr[j+1].surname,k*sizeof(char)) == 0)
+            {
+                continue;
+            }
+            
+            }
+        }  
+    }
+}
+int main()
+{
+    char input[30];
+
+    for (int i = 0; i < 10; i++)
+    {
+        fflush(stdin);
+        printf("%d The student's name,surname and notes: ",i+1);
+        fgets(input,30,stdin);
+        scanf("%f", &a[i].point);
+        read(&a[i],input,i);
+    }
+    printf("-----LIST-----\n");
+    compare(&a);
+    write(a);
+}*/
