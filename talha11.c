@@ -200,3 +200,39 @@ int main()
     addtime(&t1,tsc);
     printf("\nYour new time: %d:%d:%d",t1.hour,t1.min,t1.sc);
 }*/
+
+//    EXERCISE 16.4
+/*struct zaman{
+    int hour;
+    int min;
+    int sc;
+
+};
+void addtime(struct zaman *ptr,struct zaman tadd)
+{
+    ptr->sc= ptr->sc + tadd.sc;
+    if (ptr->sc >= 60)
+    {
+        ptr->min= ptr->min+ptr->sc/60;
+        ptr->sc= ptr->sc%60;
+    }
+    ptr->min= ptr->min + tadd.min;
+    if (ptr->min >= 60)
+    {
+        ptr->hour=ptr->hour+ptr->min/60;
+        ptr->min= ptr->min%60;
+    }
+    ptr->hour= ptr->hour + tadd.hour;
+    if (ptr->hour >= 24)
+    {
+        ptr->hour= 0;
+    }
+}
+int main()
+{
+    struct zaman t1 ={23,30,20};
+    struct zaman t2 ={1,0,40};
+
+    addtime(&t1,t2);
+    printf("\nYour new time: %d:%d:%d",t1.hour,t1.min,t1.sc);
+}*/
