@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include <string.h>
 
-struct student
+/*struct student
 {
     char name[10];
     int age;
@@ -37,6 +37,44 @@ int main()
     {
         printf("%d. student's card:\nName:%s\nAge:%d\nGender:%c\nNum:%d",i+1,a[i].name,a[i].age,a[i].gender,a[i].num);
     }
-    
-    
+}*/
+
+//    EXERCISE 16.1
+/*struct student
+{
+    char name[20];
+    char surname[20];
+    float point;
+
+}a[10];
+
+void read(struct student *ptr,char input[],int i)
+{
+    sscanf(input,"%[^;];%[^;];",ptr->name,ptr->surname);
 }
+void write(struct student ptr[])
+{
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%s %s %.2f\n",ptr->name,ptr->surname,ptr->point);
+        ptr++;
+    }
+}
+
+int main()
+{
+    char input[30];
+
+    for (int i = 0; i < 10; i++)
+    {
+        fflush(stdin);
+        printf("%d The student's name,surname and notes: ",i+1);
+        fgets(input,30,stdin);
+        scanf("%f", &a[i].point);
+        read(&a[i],input,i);
+    }
+    printf("-----LIST-----\n");
+
+    write(a);
+    
+}*/
