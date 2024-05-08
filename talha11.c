@@ -421,3 +421,57 @@ int main()
     printf("a1: %d,%s,%s,%.2f,'%c'",a1.table,a1.name,a1.surname,a1.note,a1.sex);
     printf("\na2: %d,%s,%s,%.2f,'%c'",a2.table,a2.name,a2.surname,a2.note,a2.sex);
 }*/
+
+//    EXERCISE 16.9
+/*struct customer{
+    int table;
+    char namefull[50];
+    char number[15];
+    float debt;
+    char sex;
+};
+void switched(struct customer *ptr1,struct customer *ptr2)
+{
+    int tabler= ptr1->table;
+    float debtr= ptr1->debt;
+    char sexr= ptr1->sex;
+    char namer[50];
+    char numberr[15];
+    strcpy(namer,ptr1->namefull);
+    strcpy(numberr,ptr1->number);
+
+    ptr1->table= ptr2->table;
+    ptr1->debt= ptr2->debt;
+    ptr1->sex= ptr2->sex;
+    strcpy(ptr1->namefull,ptr2->namefull);
+    strcpy(ptr1->number,ptr2->number);
+
+    ptr2->table= tabler;
+    ptr2->debt= debtr;
+    ptr2->sex= sexr;
+    strcpy(ptr2->namefull,namer);
+    strcpy(ptr2->number,numberr);
+}
+int main()
+{
+    typedef struct customer C;
+    C a1= {4,"Zeynep Akdag","4241",1000.45,'K'};
+    C a2= {2,"Talha Korkmaz","2983",10.05,'E'};
+    C a3= {5,"Alperen Palak","2841",500.05,'K'};
+
+    for (int i = 0; i < 2; i++)
+    {
+        if (a1.debt > a2.debt)
+        {
+            switched(&a1,&a2);
+        }
+        if (a2.debt > a3.debt)
+        {
+            switched(&a2,&a3);
+        }
+    }
+    
+    printf("a1: %d,%s,%s,%.2f,'%c'",a1.table,a1.namefull,a1.number,a1.debt,a1.sex);
+    printf("\na2: %d,%s,%s,%.2f,'%c'",a2.table,a2.namefull,a2.number,a2.debt,a2.sex);
+    printf("\na3: %d,%s,%s,%.2f,'%c'",a3.table,a3.namefull,a3.number,a3.debt,a3.sex);
+}*/
