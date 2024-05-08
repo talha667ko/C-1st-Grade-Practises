@@ -326,3 +326,57 @@ int main()
     soustract(t1,t2,&tS);
     printf("The difference between the times is %d hour(s) %d minute(s) and %d second(s).",tS.hour,tS.min,tS.sc);
 }*/
+
+//    EXERCISE 16.7
+/*struct date{
+    int day;
+    int month;
+    int year;
+
+};
+int compare(struct date t1,struct date t2,struct date *ptrT)
+{
+    ptrT->day = t1.day;
+    ptrT->month = t1.month;
+    ptrT->year = t1.year;
+
+    if (t2.year > t1.year)
+    {
+        ptrT->day = t1.day;
+        ptrT->month = t1.month;
+        ptrT->year = t1.year;
+    } else if (t2.year == t1.year && t2.month > t1.month)
+    {
+        ptrT->day = t1.day;
+        ptrT->month = t1.month;
+        ptrT->year = t1.year;
+    }else if (t2.year == t1.year && t2.month == t1.month && t2.day > t1.day)
+    {
+        ptrT->day = t1.day;
+        ptrT->month = t1.month;
+        ptrT->year = t1.year;
+    }
+    else if (t2.year == t1.year && t2.month == t1.month && t2.day == t1.day)
+    {
+        return 1;
+    }
+    return 0;
+}
+int main()
+{
+    typedef struct date Date;
+    Date t1;
+    Date t2;
+    Date tS;
+
+    printf("Enter the 1.date: ");
+    scanf("%d %d %d",&t1.day,&t1.month,&t1.year);
+    printf("Enter the 2.date: ");
+    scanf("%d %d %d",&t2.day,&t2.month,&t2.year);
+    compare(t1,t2,&tS);
+    if (compare(t1,t2,&tS))
+    {
+        printf("The dates are the same: %d/%d/%d.",tS.day,tS.month,tS.year);
+    }else
+        printf("The nearest date is %d/%d/%d.",tS.day,tS.month,tS.year);
+}*/
