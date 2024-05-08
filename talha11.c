@@ -297,3 +297,32 @@ int main()
     printf("\n1.time: %d:%d:%d",t1.hour,t1.min,t1.sc);
     printf("\n2.time: %d:%d:%d",t2.hour,t2.min,t2.sc);
 }*/
+
+//    EXERCISE 16.6
+/*struct zaman{
+    int hour;
+    int min;
+    int sc;
+
+};
+void soustract(struct zaman t1,struct zaman t2,struct zaman *ptrT)
+{
+    ptrT->hour = abs(t1.hour-t2.hour);
+    ptrT->min = abs(t1.min-t2.min);
+    ptrT->sc = abs(t1.sc-t2.sc);
+
+}
+int main()
+{
+    typedef struct zaman Time;
+    Time t1;
+    Time t2;
+    Time tS;
+
+    printf("Enter the 1.time: ");
+    scanf("%d %d %d",&t1.hour,&t1.min,&t1.sc);
+    printf("Enter the 2.time: ");
+    scanf("%d %d %d",&t2.hour,&t2.min,&t2.sc);
+    soustract(t1,t2,&tS);
+    printf("The difference between the times is %d hour(s) %d minute(s) and %d second(s).",tS.hour,tS.min,tS.sc);
+}*/
