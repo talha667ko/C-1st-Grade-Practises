@@ -380,3 +380,44 @@ int main()
     }else
         printf("The nearest date is %d/%d/%d.",tS.day,tS.month,tS.year);
 }*/
+
+//    EXERCISE 16.8
+/*struct student{
+    int table;
+    char name[20];
+    char surname[20];
+    float note;
+    char sex;
+};
+void switched(struct student *ptr1,struct student *ptr2)
+{
+    int tabler= ptr1->table;
+    float noter= ptr1->note;
+    char sexr= ptr1->sex;
+    char namer[20];
+    char surnamer[20];
+    strcpy(namer,ptr1->name);
+    strcpy(surnamer,ptr1->surname);
+
+    ptr1->table= ptr2->table;
+    ptr1->note= ptr2->note;
+    ptr1->sex= ptr2->sex;
+    strcpy(ptr1->name,ptr2->name);
+    strcpy(ptr1->surname,ptr2->surname);
+
+    ptr2->table= tabler;
+    ptr2->note= noter;
+    ptr2->sex= sexr;
+    strcpy(ptr2->name,namer);
+    strcpy(ptr2->surname,surnamer);
+}
+int main()
+{
+    typedef struct student Student;
+    Student a1= {2,"Talha","Korkmaz",3.15,'E'};
+    Student a2= {5,"Alperen","Palak",1.9,'K'};
+
+    switched(&a1,&a2);
+    printf("a1: %d,%s,%s,%.2f,'%c'",a1.table,a1.name,a1.surname,a1.note,a1.sex);
+    printf("\na2: %d,%s,%s,%.2f,'%c'",a2.table,a2.name,a2.surname,a2.note,a2.sex);
+}*/
