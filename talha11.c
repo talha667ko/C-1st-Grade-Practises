@@ -507,3 +507,48 @@ int main()
     Findtheeater(a,b,&c);
     printf("c coordinates : (%d,%d) and ray: %.2f",c.x,c.y,c.r);
 }*/
+
+//    EXERCISE 16.11
+/*struct circle{
+    float x;
+    float y;
+    float r;
+};
+void moveCircle(struct circle *ptr,char tangent)
+{
+    switch (tangent)
+    {
+    case 'x':
+    case 'X':
+        if (ptr->y < 0)
+        {
+            ptr->y=ptr->r*-1;
+        }else
+        ptr->y=ptr->r;
+        break;
+        ptr->y=ptr->r;
+        break;
+    case 'y':
+    case 'Y':
+        if (ptr->x < 0)
+        {
+            ptr->x=ptr->r*-1;
+        }else
+        ptr->x=ptr->r;
+        break;
+    } 
+}
+int main()
+{
+    typedef struct circle Circle;
+    Circle a;
+    char tangent;
+    printf("Which axis do you want it to be tangent:");
+    fflush(stdin);
+    scanf("%c",&tangent);
+    printf("Enter your circle's coordinates and ray: ");
+    scanf("%f %f %f",&a.x,&a.y,&a.r);
+
+    moveCircle(&a,tangent);
+    printf("The circle's new centerX: %.1f centerY: %.1f and ray: %.1f",a.x,a.y,a.r);
+}*/
