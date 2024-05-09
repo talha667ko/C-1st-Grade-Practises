@@ -475,3 +475,35 @@ int main()
     printf("\na2: %d,%s,%s,%.2f,'%c'",a2.table,a2.namefull,a2.number,a2.debt,a2.sex);
     printf("\na3: %d,%s,%s,%.2f,'%c'",a3.table,a3.namefull,a3.number,a3.debt,a3.sex);
 }*/
+
+//    EXERCISE 16.10
+/*struct circle{
+    int x;
+    int y;
+    float r;
+};
+void Findtheeater(struct circle a,struct circle b,struct circle *cptr)
+{
+    if (sqrt(pow(a.x-b.x,2)+pow(a.y-b.y,2))+a.r <= b.r)
+    {
+        cptr->x= b.x;
+        cptr->y= b.y;
+        cptr->r= b.r;
+    }
+    else if (sqrt(pow(a.x-b.x,2)+pow(a.y-b.y,2))+b.r <= a.r)
+    {
+        cptr->x= a.x;
+        cptr->y= a.y;
+        cptr->r= a.r;
+    }
+    
+    
+}
+int main()
+{
+    typedef struct circle Circle;
+    Circle a= {10,8,4.0}, b= {15,10,13.0},c;
+
+    Findtheeater(a,b,&c);
+    printf("c coordinates : (%d,%d) and ray: %.2f",c.x,c.y,c.r);
+}*/
