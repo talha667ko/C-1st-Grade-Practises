@@ -591,3 +591,43 @@ int main()
     else
          printf("These circles aren't Soddy.");
 }*/
+
+//    EXERCISE 16.13
+/*struct student{
+    char no[10];
+    float point;
+    int credit;
+    int year;
+};
+void findSuccess(struct student a,struct student b,struct student *ptrS)
+{
+    if (a.point > b.point || a.point == b.point && a.credit < b.credit || a.point == b.point && a.credit == b.credit && a.year > b.year)
+    {
+        ptrS->point= a.point;
+        ptrS->credit= a.credit;
+        ptrS->year= a.year;
+        strcpy(ptrS->no,a.no);
+    }else{
+        ptrS->point= b.point;
+        ptrS->credit= b.credit;
+        ptrS->year= b.year;
+        strcpy(ptrS->no,b.no);
+    }
+}
+int main()
+{
+    typedef struct student Stu;
+    Stu a,b,s;
+
+    printf("Enter your 1.student's num, overall average, total credit and his starting year: ");
+    fflush(stdin);
+    fgets(a.no,10,stdin);
+    scanf("%f %d %d",&a.point,&a.credit,&a.year);
+    printf("Enter your 2.student's num, overall average, total credit and his starting year: ");
+    fflush(stdin);
+    fgets(b.no,10,stdin);
+    scanf("%f %d %d",&b.point,&b.credit,&b.year);
+
+    findSuccess(a,b,&s);
+    printf("The successful student is the number %s student.(overall average: %.2f, credit: %d, entering year: %d)",s.no,s.point,s.credit,s.year);
+}*/
