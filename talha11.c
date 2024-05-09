@@ -552,3 +552,42 @@ int main()
     moveCircle(&a,tangent);
     printf("The circle's new centerX: %.1f centerY: %.1f and ray: %.1f",a.x,a.y,a.r);
 }*/
+
+//    EXERCISE 16.12
+/*struct circle{
+    int x;
+    int y;
+    int r;
+};
+int isSoddy(struct circle a,struct circle b,struct circle c)
+{
+    int r1 = sqrt(pow(a.x-b.x,2)+pow(a.y-b.y,2));
+    int r2 = sqrt(pow(a.x-c.x,2)+pow(a.y-c.y,2));
+    int r3 = sqrt(pow(c.x-b.x,2)+pow(c.y-b.y,2));
+    if (r1 == a.r+b.r && r2 == a.r+c.r && r3 == c.r+b.r)
+    {
+        return 1;
+    }
+    else
+        return 0;
+    
+}
+int main()
+{
+    typedef struct circle Circle;
+    Circle a,b,c;
+
+    printf("Enter your 1.circle's coordinates and ray: ");
+    scanf("%d %d %d",&a.x,&a.y,&a.r);
+    printf("Enter your 2.circle's coordinates and ray: ");
+    scanf("%d %d %d",&b.x,&b.y,&b.r);
+    printf("Enter your 3.circle's coordinates and ray: ");
+    scanf("%d %d %d",&c.x,&c.y,&c.r);
+
+    if (isSoddy(a,b,c))
+    {
+        printf("These circles are Soddy.");
+    }
+    else
+         printf("These circles aren't Soddy.");
+}*/
