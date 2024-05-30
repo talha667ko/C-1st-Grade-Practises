@@ -75,3 +75,79 @@ int main()
 
     return 0;
 }*/
+
+
+#define filename "seek.txt"
+
+typedef struct Student{
+    char name[10];
+    char surname[10];
+    float point;
+    int num;
+}Information;
+
+void add_student(struct Student *iptr, int x)
+{
+    iptr = iptr + x;
+    printf("\nEnter the name:");
+    fflush(stdin);
+    scanf("%s", iptr->name);
+    printf("Enter the surname:");
+    fflush(stdin);
+    scanf("%s", iptr->surname);
+    printf("The no:");
+    scanf("%d",&iptr->num);
+    printf("His point:");
+    scanf("%f",&iptr->point);
+
+}
+void write(struct Student *iptr, int x)
+{
+    for(int i=0; i<x; i++){
+        printf("\n%d. Student",i+1);
+        printf("\nName: %s",iptr[i].name);
+        printf("\nSurname: %s",iptr[i].surname);
+        printf("\nNO: %d",iptr[i].num);
+        printf("\nPoint: %f",iptr[i].point);
+    }
+}
+void change_point(struct Student *iptr, int x)
+{
+
+}
+int main()
+{
+    int choice;
+    Information info[10];
+    int x =0;
+    while(1){
+        printf("\n--------------------");
+        printf("\n1. Add student\n2. Show the list\n3. Changing a student's point\n4. Exit\nYour choice: ");
+        scanf("%d",&choice);
+
+        switch(choice){
+        case 1:
+            add_student(&info,x);
+            x++;
+            break;
+        case 2:
+            write(&info,x);
+            break;
+        case 3:
+            change_point(&info,x);
+            break;
+        case 4:
+            printf("\nExiting the program!...");
+            return 0;
+            break;
+        default:
+            printf("\nERROR try again.");
+            continue;
+        }
+    }
+}
+
+/*FILE *fptr;
+    if((fptr = fopen(filename,"w")) == NULL)
+        printf("Dosya acilamadi.");
+    fclose(fptr);*/
