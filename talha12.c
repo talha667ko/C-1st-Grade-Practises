@@ -77,7 +77,7 @@ int main()
 }*/
 
 
-#define filename "seek.txt"
+/*#define filename "test2.txt"
 
 typedef struct Student{
     char name[10];
@@ -108,12 +108,38 @@ void write(struct Student *iptr, int x)
         printf("\nName: %s",iptr[i].name);
         printf("\nSurname: %s",iptr[i].surname);
         printf("\nNO: %d",iptr[i].num);
-        printf("\nPoint: %f",iptr[i].point);
+        printf("\nPoint: %.2f",iptr[i].point);
     }
 }
 void change_point(struct Student *iptr, int x)
 {
+    int TheS;
+    printf("Which student's do you wanna change (NO):");
+    scanf("%d",&TheS);
+    for(int i=0; i<x; i++){
+        if(TheS == iptr[i].num){
+            printf("%s %s actual point: %.2f.",iptr[i].name,iptr[i].surname,iptr[i].point);
+            printf("\nHis new note:");
+            scanf("%f",&iptr[i].point);
+            break;
+        }
+    }
+}
+void print_file(struct Student *iptr, int x)
+{
+    FILE *fptr;
 
+    if(((fptr = fopen(filename, "w")) == NULL))
+        printf("The file couldn't be opened!");
+
+    for(int i=0; i<x;){
+        fprintf(fptr,"|               |  %d. Student  |  %d. Student  |  %d. Student  |\n",i+1,i+2,i+3);
+        fprintf(fptr,"|Name:          |%15s|%15s|%15s|\n",iptr[i].name,iptr[i+1].name,iptr[i+2].name);
+        fprintf(fptr,"|Surname:       |%15s|%15s|%15s|\n",iptr[i].surname,iptr[i+1].surname,iptr[i+2].surname);
+        fprintf(fptr,"|NO:            |%15d|%15d|%15d|\n",iptr[i].num,iptr[i+1].num,iptr[i+2].num);
+        fprintf(fptr,"|Note:          |%15.2f|%15.2f|%15.2f|\n",iptr[i].point,iptr[i+1].point,iptr[i+2].point);
+        i = i+3;
+    }
 }
 int main()
 {
@@ -122,7 +148,7 @@ int main()
     int x =0;
     while(1){
         printf("\n--------------------");
-        printf("\n1. Add student\n2. Show the list\n3. Changing a student's point\n4. Exit\nYour choice: ");
+        printf("\n1. Add student\n2. Show the list\n3. Changing a student's point\n4. Save informations\n5. Exit\nYour choice: ");
         scanf("%d",&choice);
 
         switch(choice){
@@ -137,6 +163,9 @@ int main()
             change_point(&info,x);
             break;
         case 4:
+            print_file(&info,x);
+            break;
+        case 5:
             printf("\nExiting the program!...");
             return 0;
             break;
@@ -145,9 +174,5 @@ int main()
             continue;
         }
     }
-}
-
-/*FILE *fptr;
-    if((fptr = fopen(filename,"w")) == NULL)
-        printf("Dosya acilamadi.");
-    fclose(fptr);*/
+    return 0;
+}*/
